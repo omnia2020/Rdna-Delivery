@@ -1,1 +1,62 @@
-{}
+{
+    "deliveryApp":"Delivery App",
+    "pleaseWriteYourPhoneOrmail":"Please write your phone or email address in order to login into your account",
+    "mobileNoOrMail":"Mobile No. or Email",
+    "password":"Password",
+    "login":"Login",
+    "forgetPass":"Forget Password?",
+
+    "yourEmailIsInvalid":"Your email address is invalid",
+    "yourPassIstooShort":"Your password is too short",
+    "yourPhoneIsInvalid":"Your mobile number is invalid",
+    "pleaseEnterPhoneNumber":"Please enter mobile number",
+    "yourPasswordIsRequired":"Your password is required",
+    "pleaseEnterYourPassword":"Please enter your password",
+    "pleaseEnterYourPhoneOrEmail":"Please enter your email or phone number",
+    "fieldIsRequired":"This field is required",
+    "passIsRequired":"Password is required",
+    "nameIsRequired":"Name is required",
+    "nameMustHasOnlyLetters":"Name must has only letters",
+
+    "back":"Back",
+
+    "checkUrInbox":"Check your inbox!",
+    "weHaveSentEmailCheckItToResetPass":"We've been sent an email to the mentioned email address in your inbox please check it in order to reset your password",
+
+    "resetPassword":"Reset Password",
+    "pleaseWriteUrPhoneToLogin":"Please write your phone or email address in order to login into your account",
+    "yourNewPass":"Your new password", 
+    "confirmNewPass":"Confirm new password",
+    "currentPass":"Current Password",
+
+    "code":"Code",
+    "passwordMustBeTheSame":"Password must be the same",
+
+    "forgotPassword":"Forgot Password",
+    "enterEmailAddressToResetPass":"Please enter your email address to reset your account password.",
+
+    "theForgetCodeIsSent":"The forget code is sent to your email",
+    
+    "email":"Email",
+
+    "welcomeToDeliveryApp":"Welcome To Delivery App",
+
+    "active":"Active",
+    "idle":"Idle",
+    "invisible":"Invisible",
+    "overview":"Overview",
+    "respondTime":"Respond time",
+    "gotReady":"Got Ready",
+    "orderMissed":"Order Missed",
+    "currentMonth":"Current Month",
+    "lastMonthKpi":"Last Months KPI",
+    "kpi":"Kpi",
+    "status":"Status",
+
+    "hello":"Hello",
+
+    "notifications":"Notifications"
+
+
+    
+}

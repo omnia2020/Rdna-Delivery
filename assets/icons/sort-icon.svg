@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.408" height="24" viewBox="0 0 24.408 24">
+  <g id="Group_37582" data-name="Group 37582" transform="translate(-5.092 -18)">
+    <g id="Group_35762" data-name="Group 35762" transform="translate(14.5 5)">
+      <g id="vuesax_outline_sort" data-name="vuesax/outline/sort" transform="translate(0 13)">
+        <g id="vuesax_outline_sort-2" data-name="vuesax/outline/sort">
+          <g id="sort">
+            <path id="Vector" d="M24,0V24H0V0Z" transform="translate(-9)" fill="#121212" opacity="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_37584" data-name="Group 37584" transform="translate(-0.35 1.193)">
+      <g id="Group_37039" data-name="Group 37039" transform="translate(6.5 19)">
+        <line id="Line_168" data-name="Line 168" y2="16.5" transform="translate(4.856 1.5)" fill="none" stroke="#1f150f" stroke-linecap="round" stroke-width="1.5"/>
+        <g id="Group_37038" data-name="Group 37038" transform="translate(4.856 18.114) rotate(139)">
+          <line id="Line_169" data-name="Line 169" y1="7.402" transform="translate(0 0)" fill="none" stroke="#1f150f" stroke-linecap="round" stroke-width="1.5"/>
+        </g>
+      </g>
+      <g id="Group_37583" data-name="Group 37583" transform="translate(15 16.25)">
+        <path id="Vector-2" data-name="Vector" d="M.5,1.7C.227,1.7,0,1.315,0,.85S.227,0,.5,0h8c.273,0,.5.385.5.85s-.227.85-.5.85Z" transform="translate(0 11.557)" fill="#121212"/>
+        <path id="Vector-3" data-name="Vector" d="M.546,1.7C.248,1.7,0,1.315,0,.85S.248,0,.546,0H13.662c.3,0,.546.385.546.85s-.248.85-.546.85Z" transform="translate(0 4.25)" fill="#121212"/>
+        <path id="Vector-4" data-name="Vector" d="M.546,1.7C.248,1.7,0,1.315,0,.85S.248,0,.546,0H3.461c.3,0,.546.385.546.85s-.248.85-.546.85Z" transform="translate(0 19.25)" fill="#121212"/>
+      </g>
+    </g>
+  </g>
+</svg>

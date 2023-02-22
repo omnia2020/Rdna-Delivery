@@ -1,1 +1,62 @@
-{}
+{
+    "deliveryApp":"تطبيق التوصيل",
+    "pleaseWriteYourPhoneOrmail":"يرجى كتابة رقم هاتفك أو بريدك الإلكتروني لتسجيل الدخول إلى حسابك",
+    "mobileNoOrMail":"رقم الهاتف او البريد",
+    "password":"كلمة المرور",
+    "login":"تسجيل الدخول",
+    "forgetPass":"نسيت كلمة السر؟",
+
+    "yourEmailIsInvalid":"البريد الالكتروني غير صالح",
+    "yourPassIstooShort":"كلمة السر قصيره جدا",
+    "yourPhoneIsInvalid":"رقم الموبايل غير صالح",
+    "pleaseEnterPhoneNumber":"من فضلك اكتب رقم الموبايل",
+    "yourPasswordIsRequired":"كلمة السر مطلوبة",
+    "pleaseEnterYourPassword":"من فضلك اكتب كلمة السر",
+    "pleaseEnterYourPhoneOrEmail":"من فضلك اكتب البريد الالكتروني او رقم الموبايل",
+    "fieldIsRequired":"هذا الحقل مطلوب",
+    "passIsRequired":"كلمة السر مطلوبة",
+    "nameIsRequired":"الاسم مطلوب",
+    "nameMustHasOnlyLetters":"يجب ان يحتوي الاسم علي حروف فقط",
+
+    "back":"رجوع",
+
+    "checkUrInbox":"تحقق من الصندوق الوارد الخاص ببريدك الالكتروني",
+    "weHaveSentEmailCheckItToResetPass":"لقد تم إرسال بريد إلكتروني إلى عنوان البريد الإلكتروني المذكور في صندوق الوارد الخاص بك ، يرجى التحقق منه لإعادة تعيين كلمة المرور الخاصة بك",
+
+    "resetPassword":"إعادة تعيين كلمة المرور",
+    "pleaseWriteUrPhoneToLogin":"يرجى كتابة رقم هاتفك أو بريدك الإلكتروني لتسجيل الدخول إلى حسابك",
+    "yourNewPass":"كلمة المرور الجديدة", 
+    "confirmNewPass":"تأكيد كلمة المرور الجديدة",
+    "currentPass":"كلمة المرور الحالية",
+
+    "code":"الكود",
+    "passwordMustBeTheSame":"كلمة السر يجب ان تكون متطابقة",
+
+    "forgotPassword":"نسيت كلمة السر",
+    "enterEmailAddressToResetPass":"الرجاء إدخال عنوان بريدك الإلكتروني لإعادة تعيين كلمة مرور حسابك.",
+
+    "theForgetCodeIsSent":"تم ارسال الكود الى بريدك الالكتروني",
+
+    "email":"البريد الابكتروني",
+
+    "welcomeToDeliveryApp":"مرحبا بك في تطبيق التوصيل",
+
+    "active":"نشط",
+    "idle":"غير نشط",
+    "invisible":"غير مرئى",
+    "overview":"نظرة عامه",
+    "respondTime":"وقت الاستجابة",
+    "gotReady":"جاهز",
+    "orderMissed":"طلبات مفقوده",
+    "currentMonth":"الشهر الحالي",
+    "lastMonthKpi":"مؤشرات الشهور الماضية",
+    "kpi":"مؤشر",
+    "status":"الحالة",
+    
+    "hello":"مرحبا",
+
+    "notifications":"الاشعارات"
+
+
+
+}

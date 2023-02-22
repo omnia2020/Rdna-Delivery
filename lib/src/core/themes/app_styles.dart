@@ -4,6 +4,31 @@ import 'package:rdna_delivery/src/core/themes/themes.dart';
 
 class AppStyles {
   const AppStyles._();
+  static TextStyle get primary16pxBold => TextStyle(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.bold,
+        color: AppColors.primaryColor,
+      );
+  static TextStyle get primary16pxRegular => TextStyle(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w400,
+        color: AppColors.primaryColor,
+      );
+  static TextStyle get primary18pxSemiBold => TextStyle(
+        fontSize: 18.sp,
+        fontWeight: FontWeight.w700,
+        color: AppColors.primaryColor,
+      );
+  static TextStyle get lightBlack12Regular => TextStyle(
+        fontSize: 12.sp,
+        fontWeight: FontWeight.w400,
+        color: AppColors.lightBlack,
+      );
+  static TextStyle get lightBlack2_16Regular => TextStyle(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w400,
+        color: AppColors.lightBlack2,
+      );
   static TextStyle get white14Regular => TextStyle(
         fontSize: 14.sp,
         fontWeight: FontWeight.w400,
@@ -53,6 +78,13 @@ class AppStyles {
         fontWeight: FontWeight.w400,
         color: AppColors.contentBlackColor,
         height: 1.4,
+      );
+  static TextStyle get content14pxRegularUnderline => TextStyle(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w400,
+        color: AppColors.contentBlackColor,
+        height: 1.4,
+        decoration: TextDecoration.underline,
       );
   static TextStyle get content14pxLight => TextStyle(
         fontSize: 14.sp,
@@ -130,6 +162,17 @@ class AppStyles {
   static TextStyle get title18Medium => TextStyle(
         fontSize: 18.sp,
         fontWeight: FontWeight.w600,
+        color: AppColors.onBoardingTitleColor,
+      );
+
+  static TextStyle get title18Bold => TextStyle(
+        fontSize: 18.sp,
+        fontWeight: FontWeight.bold,
+        color: AppColors.onBoardingTitleColor,
+      );
+  static TextStyle get title18Regular => TextStyle(
+        fontSize: 18.sp,
+        fontWeight: FontWeight.w400,
         color: AppColors.onBoardingTitleColor,
       );
   static TextStyle get title14Medium => TextStyle(
@@ -357,6 +400,11 @@ class AppStyles {
         fontSize: 16.sp,
         fontWeight: FontWeight.w500,
         color: AppColors.yellowColor,
+      );
+  static TextStyle get black16Bold => TextStyle(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.bold,
+        color: AppColors.blackColor,
       );
 }
 

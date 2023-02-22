@@ -25,7 +25,7 @@ class App extends StatelessWidget {
         builder: (_, __) => MaterialApp.router(
           routerDelegate: router.delegate(),
           routeInformationParser: router.defaultRouteParser(),
-          title: 'RDNA-Fullfilment',
+          title: 'RDNA-Delivery',
           debugShowCheckedModeBanner: false,
           localizationsDelegates: const [
             AppLocalizations.delegate,

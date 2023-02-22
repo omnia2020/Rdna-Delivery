@@ -1,0 +1,10 @@
+<svg id="vuesax_linear_profile-circle" data-name="vuesax/linear/profile-circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="vuesax_linear_profile-circle-2" data-name="vuesax/linear/profile-circle">
+    <g id="profile-circle">
+      <path id="Vector" d="M3.16,6.55a3.28,3.28,0,1,1,.24,0A.963.963,0,0,0,3.16,6.55Z" transform="translate(8.72 6.23)" fill="none" stroke="#00b53c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke-dasharray="0 0"/>
+      <path id="Vector-2" data-name="Vector" d="M6.74,6.565A9.934,9.934,0,0,1,0,3.945a3.679,3.679,0,0,1,1.77-2.58,9.73,9.73,0,0,1,9.94,0,3.679,3.679,0,0,1,1.77,2.58A9.934,9.934,0,0,1,6.74,6.565Z" transform="translate(5.26 15.435)" fill="none" stroke="#00b53c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke-dasharray="0 0"/>
+      <path id="Vector-3" data-name="Vector" d="M10,20A10,10,0,1,1,20,10,10,10,0,0,1,10,20Z" transform="translate(2 2)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke-dasharray="0 0"/>
+      <path id="Vector-4" data-name="Vector" d="M24,0V24H0V0Z" transform="translate(24 24) rotate(180)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

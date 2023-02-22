@@ -26,6 +26,7 @@ class AppColors {
 
   static const Color darkGreyColor = Color(0xff535353);
   static const Color borderColor = Color(0xffDFDFDF);
+  static const Color lightBlack2 = Color(0xff324139);
 
   static const Color lightBlackColor = Color(0xff292D32);
 
@@ -66,4 +67,19 @@ class AppColors {
   static const Color greyColorF4 = Color(0xffF4F4F4);
 
   static const Color redColorNote = Color(0xffF0183D);
+
+  static const Color idleColor = Color(0xffE2B600);
+  static const Color borderIdleColor = Color(0xffBC9800);
+
+  static const Color borderActiveColor = Color(0xff00B907);
+  static const Color invisibleColor = Color(0xffD5D5D5);
+  static const Color borderInvisibleColor = Color(0xff8D8D8D);
+
+  static const Color overViewColor = Color(0xffFCFCFC);
+  static const Color overViewBorderColor = Color(0xffEFEFEF);
+
+  static const Color blueColor = Color(0xff1F90FA);
+  static const Color mintGreenColor = Color(0xff5ECEB1);
+  static const Color brownColor = Color(0xffF8C99D);
+  static const Color lightBlack = Color(0xff425063);
 }

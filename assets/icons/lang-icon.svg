@@ -1,0 +1,12 @@
+<svg id="vuesax_outline_language-square" data-name="vuesax/outline/language-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="vuesax_outline_language-square-2" data-name="vuesax/outline/language-square">
+    <g id="language-square">
+      <path id="Vector" d="M.15,1.2A.75.75,0,0,1,1.35.3,4.98,4.98,0,0,0,5.3,2.47a.755.755,0,0,1,.75.75.764.764,0,0,1-.76.75A6.406,6.406,0,0,1,.15,1.2Z" transform="translate(11.711 13.5)" fill="#00b53c"/>
+      <path id="Vector-2" data-name="Vector" d="M0,8.53a.755.755,0,0,1,.75-.75A6.9,6.9,0,0,0,7.5.75.75.75,0,0,1,9,.75,8.4,8.4,0,0,1,.75,9.28.755.755,0,0,1,0,8.53Z" transform="translate(6.25 8.19)" fill="#121212"/>
+      <path id="Vector-3" data-name="Vector" d="M0,2.43V.75A.755.755,0,0,1,.75,0,.755.755,0,0,1,1.5.75V2.43a.755.755,0,0,1-.75.75A.755.755,0,0,1,0,2.43Z" transform="translate(11.25 6.53)" fill="#121212"/>
+      <path id="Vector-4" data-name="Vector" d="M.75,1.5A.755.755,0,0,1,0,.75.755.755,0,0,1,.75,0h9.98a.755.755,0,0,1,.75.75.755.755,0,0,1-.75.75Z" transform="translate(6.26 8.21)" fill="#00b53c"/>
+      <path id="Vector-5" data-name="Vector" d="M13.75,21.5h-6C2.318,21.5,0,19.182,0,13.75v-6C0,2.318,2.318,0,7.75,0h6c5.432,0,7.75,2.318,7.75,7.75v6C21.5,19.182,19.182,21.5,13.75,21.5Zm-6-20C3.136,1.5,1.5,3.136,1.5,7.75v6C1.5,18.364,3.136,20,7.75,20h6C18.364,20,20,18.364,20,13.75v-6c0-4.614-1.635-6.25-6.25-6.25Z" transform="translate(1.25 1.25)" fill="#1f150f"/>
+      <path id="Vector-6" data-name="Vector" d="M24,0V24H0V0Z" transform="translate(24 24) rotate(180)" fill="#1f150f" opacity="0"/>
+    </g>
+  </g>
+</svg>
