@@ -89,7 +89,12 @@
     "cardOnDelivery":"الدفع بالبطاقة عند الاستلام",
     "thankUForDeliveringOrder":"شكرا لك علي توصيل الطلب",
 
-    "egp":"ج.م"
+    "egp":"ج.م",
+
+    "orderStatus":"حالة الطلب",
+    "haveUDeliveredTheOrder":"هل قمت بتسليم الطلب؟",
+    "yesOrderIsDelivered":"نعم، تم تسليم الطلب",
+    "noThereIsAnIssueWithOrder":"لا، توجد مشكلة في الطلب"
 
 
 

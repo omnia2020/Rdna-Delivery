@@ -789,6 +789,46 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Order Status`
+  String get orderStatus {
+    return Intl.message(
+      'Order Status',
+      name: 'orderStatus',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Have you delivered the order?`
+  String get haveUDeliveredTheOrder {
+    return Intl.message(
+      'Have you delivered the order?',
+      name: 'haveUDeliveredTheOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Yes, Order Is Delivered`
+  String get yesOrderIsDelivered {
+    return Intl.message(
+      'Yes, Order Is Delivered',
+      name: 'yesOrderIsDelivered',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No, There Is An Issue With Order`
+  String get noThereIsAnIssueWithOrder {
+    return Intl.message(
+      'No, There Is An Issue With Order',
+      name: 'noThereIsAnIssueWithOrder',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -89,6 +89,11 @@
     "cardOnDelivery":"Card On Delivery",
     "thankUForDeliveringOrder":"Thank You For Delivering Order",
 
-    "egp":"EGP"
+    "egp":"EGP",
+
+    "orderStatus":"Order Status",
+    "haveUDeliveredTheOrder":"Have you delivered the order?",
+    "yesOrderIsDelivered":"Yes, Order Is Delivered",
+    "noThereIsAnIssueWithOrder":"No, There Is An Issue With Order"
     
 }

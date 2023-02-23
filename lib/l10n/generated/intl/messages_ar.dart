@@ -62,6 +62,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر"),
         "gotReady": MessageLookupByLibrary.simpleMessage("جاهز"),
+        "haveUDeliveredTheOrder":
+            MessageLookupByLibrary.simpleMessage("هل قمت بتسليم الطلب؟"),
         "hello": MessageLookupByLibrary.simpleMessage("مرحبا"),
         "idle": MessageLookupByLibrary.simpleMessage("غير نشط"),
         "invisible": MessageLookupByLibrary.simpleMessage("غير مرئى"),
@@ -76,12 +78,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameMustHasOnlyLetters": MessageLookupByLibrary.simpleMessage(
             "يجب ان يحتوي الاسم علي حروف فقط"),
         "no": MessageLookupByLibrary.simpleMessage("لا"),
+        "noThereIsAnIssueWithOrder":
+            MessageLookupByLibrary.simpleMessage("لا، توجد مشكلة في الطلب"),
         "note": MessageLookupByLibrary.simpleMessage("ملاحظة"),
         "notifications": MessageLookupByLibrary.simpleMessage("الاشعارات"),
         "orderDetails": MessageLookupByLibrary.simpleMessage("تفاصيل الطلب"),
         "orderItems": MessageLookupByLibrary.simpleMessage("عناصر الطلب"),
         "orderMissed": MessageLookupByLibrary.simpleMessage("طلبات مفقوده"),
         "orderNo": MessageLookupByLibrary.simpleMessage("طلب رقم"),
+        "orderStatus": MessageLookupByLibrary.simpleMessage("حالة الطلب"),
         "orderSummary": MessageLookupByLibrary.simpleMessage("ملخص الطلب"),
         "ordersList": MessageLookupByLibrary.simpleMessage("الطلبات"),
         "overview": MessageLookupByLibrary.simpleMessage("نظرة عامه"),
@@ -121,6 +126,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "welcomeToDeliveryApp":
             MessageLookupByLibrary.simpleMessage("مرحبا بك في تطبيق التوصيل"),
         "yes": MessageLookupByLibrary.simpleMessage("نعم"),
+        "yesOrderIsDelivered":
+            MessageLookupByLibrary.simpleMessage("نعم، تم تسليم الطلب"),
         "yourEmailIsInvalid":
             MessageLookupByLibrary.simpleMessage("البريد الالكتروني غير صالح"),
         "yourNewPass":

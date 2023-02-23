@@ -60,6 +60,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "gotReady": MessageLookupByLibrary.simpleMessage("Got Ready"),
+        "haveUDeliveredTheOrder": MessageLookupByLibrary.simpleMessage(
+            "Have you delivered the order?"),
         "hello": MessageLookupByLibrary.simpleMessage("Hello"),
         "idle": MessageLookupByLibrary.simpleMessage("Idle"),
         "invisible": MessageLookupByLibrary.simpleMessage("Invisible"),
@@ -74,12 +76,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameMustHasOnlyLetters":
             MessageLookupByLibrary.simpleMessage("Name must has only letters"),
         "no": MessageLookupByLibrary.simpleMessage("No"),
+        "noThereIsAnIssueWithOrder": MessageLookupByLibrary.simpleMessage(
+            "No, There Is An Issue With Order"),
         "note": MessageLookupByLibrary.simpleMessage("Note"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orderDetails": MessageLookupByLibrary.simpleMessage("Order Details"),
         "orderItems": MessageLookupByLibrary.simpleMessage("Order Items"),
         "orderMissed": MessageLookupByLibrary.simpleMessage("Order Missed"),
         "orderNo": MessageLookupByLibrary.simpleMessage("Order No."),
+        "orderStatus": MessageLookupByLibrary.simpleMessage("Order Status"),
         "orderSummary": MessageLookupByLibrary.simpleMessage("Order Summary"),
         "ordersList": MessageLookupByLibrary.simpleMessage("Orders List"),
         "overview": MessageLookupByLibrary.simpleMessage("Overview"),
@@ -118,6 +123,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "welcomeToDeliveryApp":
             MessageLookupByLibrary.simpleMessage("Welcome To Delivery App"),
         "yes": MessageLookupByLibrary.simpleMessage("Yes"),
+        "yesOrderIsDelivered":
+            MessageLookupByLibrary.simpleMessage("Yes, Order Is Delivered"),
         "yourEmailIsInvalid": MessageLookupByLibrary.simpleMessage(
             "Your email address is invalid"),
         "yourNewPass":
