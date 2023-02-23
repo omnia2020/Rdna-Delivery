@@ -62,6 +62,16 @@
     "alert":"تنبيه",
     "doYouWantToExitTheApp":"هل تريد اغلاق التطبيق؟",
     "yes":"نعم",
-    "no":"لا"
+    "no":"لا",
+
+    "orderNo":"طلب رقم",
+    "items":"منتج",
+    "deliverTo":"توصيل ل",
+
+    "searchByOrderNo":"ابحث برقم الطلب",
+    "currentOrders":"الطلبات الحالية"
+
+
+
 
 }

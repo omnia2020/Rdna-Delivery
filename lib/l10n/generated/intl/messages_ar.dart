@@ -31,9 +31,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirmNewPass":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور الجديدة"),
         "currentMonth": MessageLookupByLibrary.simpleMessage("الشهر الحالي"),
+        "currentOrders":
+            MessageLookupByLibrary.simpleMessage("الطلبات الحالية"),
         "currentPass":
             MessageLookupByLibrary.simpleMessage("كلمة المرور الحالية"),
         "dashboard": MessageLookupByLibrary.simpleMessage("لوحة التحكم"),
+        "deliverTo": MessageLookupByLibrary.simpleMessage("توصيل ل"),
         "deliveryApp": MessageLookupByLibrary.simpleMessage("تطبيق التوصيل"),
         "doYouWantToExitTheApp":
             MessageLookupByLibrary.simpleMessage("هل تريد اغلاق التطبيق؟"),
@@ -49,6 +52,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "hello": MessageLookupByLibrary.simpleMessage("مرحبا"),
         "idle": MessageLookupByLibrary.simpleMessage("غير نشط"),
         "invisible": MessageLookupByLibrary.simpleMessage("غير مرئى"),
+        "items": MessageLookupByLibrary.simpleMessage("منتج"),
         "kpi": MessageLookupByLibrary.simpleMessage("مؤشر"),
         "lastMonthKpi":
             MessageLookupByLibrary.simpleMessage("مؤشرات الشهور الماضية"),
@@ -61,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "no": MessageLookupByLibrary.simpleMessage("لا"),
         "notifications": MessageLookupByLibrary.simpleMessage("الاشعارات"),
         "orderMissed": MessageLookupByLibrary.simpleMessage("طلبات مفقوده"),
+        "orderNo": MessageLookupByLibrary.simpleMessage("طلب رقم"),
         "ordersList": MessageLookupByLibrary.simpleMessage("الطلبات"),
         "overview": MessageLookupByLibrary.simpleMessage("نظرة عامه"),
         "passIsRequired":
@@ -81,6 +86,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "resetPassword":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
         "respondTime": MessageLookupByLibrary.simpleMessage("وقت الاستجابة"),
+        "searchByOrderNo":
+            MessageLookupByLibrary.simpleMessage("ابحث برقم الطلب"),
         "status": MessageLookupByLibrary.simpleMessage("الحالة"),
         "theForgetCodeIsSent": MessageLookupByLibrary.simpleMessage(
             "تم ارسال الكود الى بريدك الالكتروني"),

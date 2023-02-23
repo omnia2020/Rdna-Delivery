@@ -30,11 +30,8 @@ class _DashboardPageState extends State<DashboardPage> {
     return AutoTabsScaffold(
       routes: [
         const HomeRoute(),
-        const HomeRoute(),
-        const HomeRoute(),
-        // const OrderListRoute(),
-        //const NotificationsRoute(),
-        // const AccountSettingRouter(),
+        const OrderListRoute(),
+        const NotificationsRoute(),
       ],
       animationCurve: Curves.fastLinearToSlowEaseIn,
       bottomNavigationBuilder: (_, tabsRouter) => InkWell(
@@ -87,7 +84,7 @@ class _DashboardPageState extends State<DashboardPage> {
               BottomNavyBarItem(
                 icon: tabsRouter.activeIndex == 1
                     ? SvgPicture.asset(
-                        AssetsHelper.orderLstIcon,
+                        AssetsHelper.activeOrderLstIcon,
                         color: AppColors.onBoardingTitleColor,
                       )
                     : SvgPicture.asset(

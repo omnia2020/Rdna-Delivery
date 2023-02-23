@@ -559,6 +559,56 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Order No.`
+  String get orderNo {
+    return Intl.message(
+      'Order No.',
+      name: 'orderNo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Items`
+  String get items {
+    return Intl.message(
+      'Items',
+      name: 'items',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Deliver To`
+  String get deliverTo {
+    return Intl.message(
+      'Deliver To',
+      name: 'deliverTo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search by order no.`
+  String get searchByOrderNo {
+    return Intl.message(
+      'Search by order no.',
+      name: 'searchByOrderNo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Current Orders`
+  String get currentOrders {
+    return Intl.message(
+      'Current Orders',
+      name: 'currentOrders',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

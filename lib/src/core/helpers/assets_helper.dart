@@ -14,6 +14,9 @@ class AssetsHelper {
       'assets/icons/active-dashboard-icon.svg';
 
   static const String orderLstIcon = 'assets/icons/order-list-icon.svg';
+  static const String activeOrderLstIcon =
+      'assets/icons/acive-order-lst-icon.svg';
+
   static const String notificationIcon = 'assets/icons/notification-icon.svg';
   static const String activeNotificationIcon =
       'assets/icons/active-notification-icon.svg';

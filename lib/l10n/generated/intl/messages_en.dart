@@ -31,8 +31,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirmNewPass":
             MessageLookupByLibrary.simpleMessage("Confirm new password"),
         "currentMonth": MessageLookupByLibrary.simpleMessage("Current Month"),
+        "currentOrders": MessageLookupByLibrary.simpleMessage("Current Orders"),
         "currentPass": MessageLookupByLibrary.simpleMessage("Current Password"),
         "dashboard": MessageLookupByLibrary.simpleMessage("Dashboard"),
+        "deliverTo": MessageLookupByLibrary.simpleMessage("Deliver To"),
         "deliveryApp": MessageLookupByLibrary.simpleMessage("Delivery App"),
         "doYouWantToExitTheApp": MessageLookupByLibrary.simpleMessage(
             "Do you want to exit the app?"),
@@ -48,6 +50,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "hello": MessageLookupByLibrary.simpleMessage("Hello"),
         "idle": MessageLookupByLibrary.simpleMessage("Idle"),
         "invisible": MessageLookupByLibrary.simpleMessage("Invisible"),
+        "items": MessageLookupByLibrary.simpleMessage("Items"),
         "kpi": MessageLookupByLibrary.simpleMessage("Kpi"),
         "lastMonthKpi": MessageLookupByLibrary.simpleMessage("Last Months KPI"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
@@ -60,6 +63,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "no": MessageLookupByLibrary.simpleMessage("No"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orderMissed": MessageLookupByLibrary.simpleMessage("Order Missed"),
+        "orderNo": MessageLookupByLibrary.simpleMessage("Order No."),
         "ordersList": MessageLookupByLibrary.simpleMessage("Orders List"),
         "overview": MessageLookupByLibrary.simpleMessage("Overview"),
         "passIsRequired":
@@ -79,6 +83,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please write your phone or email address in order to login into your account"),
         "resetPassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
         "respondTime": MessageLookupByLibrary.simpleMessage("Respond time"),
+        "searchByOrderNo":
+            MessageLookupByLibrary.simpleMessage("Search by order no."),
         "status": MessageLookupByLibrary.simpleMessage("Status"),
         "theForgetCodeIsSent": MessageLookupByLibrary.simpleMessage(
             "The forget code is sent to your email"),

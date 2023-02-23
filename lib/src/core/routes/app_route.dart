@@ -4,6 +4,7 @@ import 'package:rdna_delivery/src/features/authentication/reset-password/present
 import 'package:rdna_delivery/src/features/dashboard/presentation/pages/pages.dart';
 import 'package:rdna_delivery/src/features/home/presentation/pages/pages.dart';
 import 'package:rdna_delivery/src/features/notifications/presentation/pages/pages.dart';
+import 'package:rdna_delivery/src/features/order-list/presentation/pages/pages.dart';
 import 'package:rdna_delivery/src/features/splash_page/splash_page.dart';
 export 'package:auto_route/auto_route.dart';
 
@@ -25,11 +26,11 @@ export 'package:auto_route/auto_route.dart';
           path: 'home',
           name: 'HomeRoute',
         ),
-        // AutoRoute<void>(
-        //   page: OrderListPage,
-        //   path: 'order-list',
-        //   name: 'OrderListRoute',
-        // ),
+        AutoRoute<void>(
+          page: OrderListPage,
+          path: 'order-list',
+          name: 'OrderListRoute',
+        ),
         AutoRoute<void>(
           page: NotificationsPage,
           path: 'notifications',

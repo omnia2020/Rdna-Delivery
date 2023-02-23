@@ -62,7 +62,14 @@
     "alert":"Alert",
     "doYouWantToExitTheApp":"Do you want to exit the app?",
     "yes":"Yes",
-    "no":"No"
+    "no":"No",
+
+    "orderNo":"Order No.",
+    "items":"Items",
+    "deliverTo":"Deliver To",
+
+    "searchByOrderNo":"Search by order no.",
+    "currentOrders":"Current Orders"
 
 
     

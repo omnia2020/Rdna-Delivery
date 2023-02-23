@@ -8,3 +8,4 @@ export 'loading_progress.dart';
 export 'html_content.dart';
 export 'delete_cart_slidable.dart';
 export 'close_alert_dialog.dart';
+export 'custom_search_bar.dart';
