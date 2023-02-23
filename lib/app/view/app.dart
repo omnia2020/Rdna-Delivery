@@ -21,7 +21,7 @@ class App extends StatelessWidget {
       ),
       child: ScreenUtilInit(
         designSize: const Size(375, 812),
-        minTextAdapt: true,
+        // minTextAdapt: true,
         builder: (_, __) => MaterialApp.router(
           routerDelegate: router.delegate(),
           routeInformationParser: router.defaultRouteParser(),

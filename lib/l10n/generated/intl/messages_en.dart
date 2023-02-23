@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "active": MessageLookupByLibrary.simpleMessage("Active"),
+        "alert": MessageLookupByLibrary.simpleMessage("Alert"),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
         "checkUrInbox":
             MessageLookupByLibrary.simpleMessage("Check your inbox!"),
@@ -31,7 +32,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Confirm new password"),
         "currentMonth": MessageLookupByLibrary.simpleMessage("Current Month"),
         "currentPass": MessageLookupByLibrary.simpleMessage("Current Password"),
+        "dashboard": MessageLookupByLibrary.simpleMessage("Dashboard"),
         "deliveryApp": MessageLookupByLibrary.simpleMessage("Delivery App"),
+        "doYouWantToExitTheApp": MessageLookupByLibrary.simpleMessage(
+            "Do you want to exit the app?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "enterEmailAddressToResetPass": MessageLookupByLibrary.simpleMessage(
             "Please enter your email address to reset your account password."),
@@ -53,8 +57,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Name is required"),
         "nameMustHasOnlyLetters":
             MessageLookupByLibrary.simpleMessage("Name must has only letters"),
+        "no": MessageLookupByLibrary.simpleMessage("No"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orderMissed": MessageLookupByLibrary.simpleMessage("Order Missed"),
+        "ordersList": MessageLookupByLibrary.simpleMessage("Orders List"),
         "overview": MessageLookupByLibrary.simpleMessage("Overview"),
         "passIsRequired":
             MessageLookupByLibrary.simpleMessage("Password is required"),
@@ -80,6 +86,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "We\'ve been sent an email to the mentioned email address in your inbox please check it in order to reset your password"),
         "welcomeToDeliveryApp":
             MessageLookupByLibrary.simpleMessage("Welcome To Delivery App"),
+        "yes": MessageLookupByLibrary.simpleMessage("Yes"),
         "yourEmailIsInvalid": MessageLookupByLibrary.simpleMessage(
             "Your email address is invalid"),
         "yourNewPass":

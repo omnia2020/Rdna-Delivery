@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_37508" data-name="Group 37508" transform="translate(-16 -757)">
+    <g id="vuesax_bold_main-component" data-name="vuesax/bold/main-component" transform="translate(16 757)">
+      <g id="vuesax_bold_main-component-2" data-name="vuesax/bold/main-component">
+        <g id="main-component">
+          <path id="Vector" d="M32,0V32H0V0Z" transform="translate(32 32) rotate(180)" fill="none" opacity="0"/>
+          <g id="Group" transform="translate(2.667 2.667)">
+            <path id="Vector-2" data-name="Vector" d="M9.8,1.4A4.829,4.829,0,0,0,3,1.4L.39,4.013a1.344,1.344,0,0,0,0,1.893l5.08,5.08a1.328,1.328,0,0,0,1.88,0l5.08-5.08a1.356,1.356,0,0,0-.013-1.893Z" transform="translate(6.93)" fill="#292d32"/>
+            <path id="Vector-3" data-name="Vector" d="M1.4,3a4.829,4.829,0,0,0,0,6.8l2.613,2.613a1.328,1.328,0,0,0,1.88,0l5.08-5.08a1.328,1.328,0,0,0,0-1.88L5.907.39a1.344,1.344,0,0,0-1.893,0Z" transform="translate(0 6.932)" fill="#292d32"/>
+            <path id="Vector-4" data-name="Vector" d="M7.35.39a1.328,1.328,0,0,0-1.88,0L.39,5.47a1.328,1.328,0,0,0,0,1.88l5.08,5.08a1.328,1.328,0,0,0,1.88,0L9.963,9.817A4.845,4.845,0,0,0,9.963,3Z" transform="translate(15.302 6.932)" fill="#292d32"/>
+            <path id="Vector-5" data-name="Vector" d="M3.005,9.963a4.829,4.829,0,0,0,6.8,0L12.418,7.35a1.328,1.328,0,0,0,0-1.88L7.338.39a1.328,1.328,0,0,0-1.88,0L.378,5.47A1.34,1.34,0,0,0,.392,7.35Z" transform="translate(6.927 15.302)" fill="#292d32"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

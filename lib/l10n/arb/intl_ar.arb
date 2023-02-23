@@ -55,8 +55,13 @@
     
     "hello":"مرحبا",
 
-    "notifications":"الاشعارات"
+    "notifications":"الاشعارات",
+    "dashboard":"لوحة التحكم",
+    "ordersList":"الطلبات",
 
-
+    "alert":"تنبيه",
+    "doYouWantToExitTheApp":"هل تريد اغلاق التطبيق؟",
+    "yes":"نعم",
+    "no":"لا"
 
 }

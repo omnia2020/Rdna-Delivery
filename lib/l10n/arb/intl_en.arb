@@ -55,7 +55,14 @@
 
     "hello":"Hello",
 
-    "notifications":"Notifications"
+    "notifications":"Notifications",
+    "dashboard":"Dashboard",
+    "ordersList":"Orders List",
+
+    "alert":"Alert",
+    "doYouWantToExitTheApp":"Do you want to exit the app?",
+    "yes":"Yes",
+    "no":"No"
 
 
     

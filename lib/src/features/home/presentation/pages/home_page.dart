@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String activeStatus = '';
+  String activeStatus = 'Active';
   Color? statusColor;
   Color? borderColor;
   // init() async {

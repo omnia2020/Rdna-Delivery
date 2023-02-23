@@ -10,8 +10,14 @@ class AssetsHelper {
 
   /////// ICONS ////////////////////////////////////////////
   static const String dashboardIcon = 'assets/icons/dashboard-icon.svg';
+  static const String activeDashboardIcon =
+      'assets/icons/active-dashboard-icon.svg';
+
   static const String orderLstIcon = 'assets/icons/order-list-icon.svg';
   static const String notificationIcon = 'assets/icons/notification-icon.svg';
+  static const String activeNotificationIcon =
+      'assets/icons/active-notification-icon.svg';
+
   static const String profileIcon = 'assets/icons/profile-icon.svg';
   static const String menuIcon = 'assets/icons/menu-icon.svg';
   static const String langIcon = 'assets/icons/lang-icon.svg';

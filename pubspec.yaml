@@ -8,7 +8,7 @@ environment:
 
 dependencies:
   flutter_html:
-  auto_route: ^3.2.4
+  auto_route: ^5.0.4
   bloc: ^8.0.3
   built_collection: ^5.1.1
   cached_network_image: ^3.2.3
@@ -64,7 +64,7 @@ dependencies:
   
 
 dev_dependencies:
-  auto_route_generator: ^3.2.3
+  auto_route_generator: ^5.0.3 
   bloc_test: ^9.0.3
   build_runner: ^2.1.10
   flutter_launcher_icons: ^0.10.0
@@ -89,7 +89,7 @@ dev_dependencies:
 
 
 dependency_overrides:
-  analyzer: ^4.7.0
+  analyzer: ^5.6.0
 
 
 flutter:

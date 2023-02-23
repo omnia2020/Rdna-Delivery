@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "active": MessageLookupByLibrary.simpleMessage("نشط"),
+        "alert": MessageLookupByLibrary.simpleMessage("تنبيه"),
         "back": MessageLookupByLibrary.simpleMessage("رجوع"),
         "checkUrInbox": MessageLookupByLibrary.simpleMessage(
             "تحقق من الصندوق الوارد الخاص ببريدك الالكتروني"),
@@ -32,7 +33,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "currentMonth": MessageLookupByLibrary.simpleMessage("الشهر الحالي"),
         "currentPass":
             MessageLookupByLibrary.simpleMessage("كلمة المرور الحالية"),
+        "dashboard": MessageLookupByLibrary.simpleMessage("لوحة التحكم"),
         "deliveryApp": MessageLookupByLibrary.simpleMessage("تطبيق التوصيل"),
+        "doYouWantToExitTheApp":
+            MessageLookupByLibrary.simpleMessage("هل تريد اغلاق التطبيق؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الابكتروني"),
         "enterEmailAddressToResetPass": MessageLookupByLibrary.simpleMessage(
             "الرجاء إدخال عنوان بريدك الإلكتروني لإعادة تعيين كلمة مرور حسابك."),
@@ -54,8 +58,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameIsRequired": MessageLookupByLibrary.simpleMessage("الاسم مطلوب"),
         "nameMustHasOnlyLetters": MessageLookupByLibrary.simpleMessage(
             "يجب ان يحتوي الاسم علي حروف فقط"),
+        "no": MessageLookupByLibrary.simpleMessage("لا"),
         "notifications": MessageLookupByLibrary.simpleMessage("الاشعارات"),
         "orderMissed": MessageLookupByLibrary.simpleMessage("طلبات مفقوده"),
+        "ordersList": MessageLookupByLibrary.simpleMessage("الطلبات"),
         "overview": MessageLookupByLibrary.simpleMessage("نظرة عامه"),
         "passIsRequired":
             MessageLookupByLibrary.simpleMessage("كلمة السر مطلوبة"),
@@ -82,6 +88,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "لقد تم إرسال بريد إلكتروني إلى عنوان البريد الإلكتروني المذكور في صندوق الوارد الخاص بك ، يرجى التحقق منه لإعادة تعيين كلمة المرور الخاصة بك"),
         "welcomeToDeliveryApp":
             MessageLookupByLibrary.simpleMessage("مرحبا بك في تطبيق التوصيل"),
+        "yes": MessageLookupByLibrary.simpleMessage("نعم"),
         "yourEmailIsInvalid":
             MessageLookupByLibrary.simpleMessage("البريد الالكتروني غير صالح"),
         "yourNewPass":

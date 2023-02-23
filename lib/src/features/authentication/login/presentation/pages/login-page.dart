@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
 import 'package:rdna_delivery/src/core/helpers/assets_helper.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/validators/form_validator.dart';
 import 'package:rdna_delivery/src/core/widgets/widgets.dart';
@@ -63,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                         //   const SwitchLangCard(),
                       ],
                     ),
-                    100.verticalSpace,
+                    120.verticalSpace,
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.65,
                       child: Text(l10n.pleaseWriteYourPhoneOrmail,
@@ -95,17 +97,14 @@ class _LoginPageState extends State<LoginPage> {
                       title: l10n.login,
                       titleStyle: AppStyles.title16Medium,
                       onPressed: () async {
-                        // if (_key.currentState!.validate()) {
-                        //   await authState.login(
-                        //       auth: emailPhoneController.text,
-                        //       pass: passwordController.text);
-                        //   if (authState.appUser != null) {}
-                        // }
+                        context.router.replaceAll([const Dashboard()]);
                       },
                     ),
-                    16.verticalSpace,
+                    12.verticalSpace,
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        context.router.push(const ForgetPasswordRoute());
+                      },
                       child: Text(
                         l10n.forgetPass,
                         style: AppStyles.content14pxRegularUnderline,
