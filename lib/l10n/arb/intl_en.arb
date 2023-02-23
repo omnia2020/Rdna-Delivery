@@ -69,8 +69,26 @@
     "deliverTo":"Deliver To",
 
     "searchByOrderNo":"Search by order no.",
-    "currentOrders":"Current Orders"
+    "currentOrders":"Current Orders",
 
+    "orderDetails":"Order Details",
+    "shippingAddress":"Shipping Address",
+    "directions":"Directions",
+    "phoneNo":"Phone No",
+    "fastCall":"Fast Call",
+    "note":"Note",
+    "paymentMethod":"Payment Method",
+    "cashOnDelivery":"Cash On Delivery",
+    "customeAlreadyPaid":"Customer Already Paid",
+    "orderSummary":"Order Summary",
+    "orderItems":"Order Items",
+    "shippingFees":"Shipping Fees",
+    "total":"Total",
+    "confirmDeliveringOrder":"Confirm Delivering Order",
+    "chooseTheMethodOfPayment":"Choose the method of payment",
+    "cardOnDelivery":"Card On Delivery",
+    "thankUForDeliveringOrder":"Thank You For Delivering Order",
 
+    "egp":"EGP"
     
 }

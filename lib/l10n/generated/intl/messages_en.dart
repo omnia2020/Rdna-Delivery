@@ -25,22 +25,35 @@ class MessageLookup extends MessageLookupByLibrary {
         "active": MessageLookupByLibrary.simpleMessage("Active"),
         "alert": MessageLookupByLibrary.simpleMessage("Alert"),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
+        "cardOnDelivery":
+            MessageLookupByLibrary.simpleMessage("Card On Delivery"),
+        "cashOnDelivery":
+            MessageLookupByLibrary.simpleMessage("Cash On Delivery"),
         "checkUrInbox":
             MessageLookupByLibrary.simpleMessage("Check your inbox!"),
+        "chooseTheMethodOfPayment": MessageLookupByLibrary.simpleMessage(
+            "Choose the method of payment"),
         "code": MessageLookupByLibrary.simpleMessage("Code"),
+        "confirmDeliveringOrder":
+            MessageLookupByLibrary.simpleMessage("Confirm Delivering Order"),
         "confirmNewPass":
             MessageLookupByLibrary.simpleMessage("Confirm new password"),
         "currentMonth": MessageLookupByLibrary.simpleMessage("Current Month"),
         "currentOrders": MessageLookupByLibrary.simpleMessage("Current Orders"),
         "currentPass": MessageLookupByLibrary.simpleMessage("Current Password"),
+        "customeAlreadyPaid":
+            MessageLookupByLibrary.simpleMessage("Customer Already Paid"),
         "dashboard": MessageLookupByLibrary.simpleMessage("Dashboard"),
         "deliverTo": MessageLookupByLibrary.simpleMessage("Deliver To"),
         "deliveryApp": MessageLookupByLibrary.simpleMessage("Delivery App"),
+        "directions": MessageLookupByLibrary.simpleMessage("Directions"),
         "doYouWantToExitTheApp": MessageLookupByLibrary.simpleMessage(
             "Do you want to exit the app?"),
+        "egp": MessageLookupByLibrary.simpleMessage("EGP"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "enterEmailAddressToResetPass": MessageLookupByLibrary.simpleMessage(
             "Please enter your email address to reset your account password."),
+        "fastCall": MessageLookupByLibrary.simpleMessage("Fast Call"),
         "fieldIsRequired":
             MessageLookupByLibrary.simpleMessage("This field is required"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("Forget Password?"),
@@ -61,9 +74,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameMustHasOnlyLetters":
             MessageLookupByLibrary.simpleMessage("Name must has only letters"),
         "no": MessageLookupByLibrary.simpleMessage("No"),
+        "note": MessageLookupByLibrary.simpleMessage("Note"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+        "orderDetails": MessageLookupByLibrary.simpleMessage("Order Details"),
+        "orderItems": MessageLookupByLibrary.simpleMessage("Order Items"),
         "orderMissed": MessageLookupByLibrary.simpleMessage("Order Missed"),
         "orderNo": MessageLookupByLibrary.simpleMessage("Order No."),
+        "orderSummary": MessageLookupByLibrary.simpleMessage("Order Summary"),
         "ordersList": MessageLookupByLibrary.simpleMessage("Orders List"),
         "overview": MessageLookupByLibrary.simpleMessage("Overview"),
         "passIsRequired":
@@ -71,6 +88,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "passwordMustBeTheSame":
             MessageLookupByLibrary.simpleMessage("Password must be the same"),
+        "paymentMethod": MessageLookupByLibrary.simpleMessage("Payment Method"),
+        "phoneNo": MessageLookupByLibrary.simpleMessage("Phone No"),
         "pleaseEnterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("Please enter mobile number"),
         "pleaseEnterYourPassword":
@@ -85,9 +104,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "respondTime": MessageLookupByLibrary.simpleMessage("Respond time"),
         "searchByOrderNo":
             MessageLookupByLibrary.simpleMessage("Search by order no."),
+        "shippingAddress":
+            MessageLookupByLibrary.simpleMessage("Shipping Address"),
+        "shippingFees": MessageLookupByLibrary.simpleMessage("Shipping Fees"),
         "status": MessageLookupByLibrary.simpleMessage("Status"),
+        "thankUForDeliveringOrder": MessageLookupByLibrary.simpleMessage(
+            "Thank You For Delivering Order"),
         "theForgetCodeIsSent": MessageLookupByLibrary.simpleMessage(
             "The forget code is sent to your email"),
+        "total": MessageLookupByLibrary.simpleMessage("Total"),
         "weHaveSentEmailCheckItToResetPass": MessageLookupByLibrary.simpleMessage(
             "We\'ve been sent an email to the mentioned email address in your inbox please check it in order to reset your password"),
         "welcomeToDeliveryApp":

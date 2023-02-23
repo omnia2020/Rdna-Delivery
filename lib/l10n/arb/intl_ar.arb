@@ -69,7 +69,27 @@
     "deliverTo":"توصيل ل",
 
     "searchByOrderNo":"ابحث برقم الطلب",
-    "currentOrders":"الطلبات الحالية"
+    "currentOrders":"الطلبات الحالية",
+
+    "orderDetails":"تفاصيل الطلب",
+    "shippingAddress":"عنوان التوصيل",
+    "directions":"الاتجاهات",
+    "phoneNo":"رقم الهاتف",
+    "fastCall":"اتصال سريع",
+    "note":"ملاحظة",
+    "paymentMethod":"طرق الدفع",
+    "cashOnDelivery":"الدفع عند الاستلام",
+    "customeAlreadyPaid":"العميل دفع بالفعل",
+    "orderSummary":"ملخص الطلب",
+    "orderItems":"عناصر الطلب",
+    "shippingFees":"مصاريف الشحن",
+    "total":"الاجمالى",
+    "confirmDeliveringOrder":"تأكيد توصيل الطلب",
+    "chooseTheMethodOfPayment":"اختر طريقة الدفع",
+    "cardOnDelivery":"الدفع بالبطاقة عند الاستلام",
+    "thankUForDeliveringOrder":"شكرا لك علي توصيل الطلب",
+
+    "egp":"ج.م"
 
 
 

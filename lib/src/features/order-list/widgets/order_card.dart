@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
 import 'package:rdna_delivery/src/core/helpers/assets_helper.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 
 class OrderCard extends StatelessWidget {
@@ -22,7 +24,9 @@ class OrderCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        context.router.push(const OrderDetailsRoute());
+      },
       borderRadius: BorderRadius.circular(8.r),
       child: Container(
         width: double.infinity,

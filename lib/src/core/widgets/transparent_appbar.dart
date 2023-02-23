@@ -28,7 +28,8 @@ class TransparentAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       systemOverlayStyle: systemOverlayStyle,
       leading: backButton ??
-          BackButton(
+          IconButton(
+            icon: const Icon(Icons.arrow_back_ios),
             color: AppColors.blackColor,
             onPressed: () {
               context.router.pop();

@@ -30,6 +30,10 @@ class AssetsHelper {
   static const String filterIcon = 'assets/icons/filter-icon.svg';
   static const String sortIcon = 'assets/icons/sort-icon.svg';
 
+  static const String callIcon = 'assets/icons/call-icon.svg';
+  static const String cashIcon = 'assets/icons/cash-icon.svg';
+  static const String checkMarkIcon = 'assets/icons/check-mark-icon.svg';
+
   /////// VECTORS ///////////////////////////////////////////
   static const String resetPassVector = 'assets/images/reset-pass-vector.svg';
   static const String messageVector = 'assets/images/message-vector.svg';

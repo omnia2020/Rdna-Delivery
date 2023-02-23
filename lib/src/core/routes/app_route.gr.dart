@@ -11,8 +11,9 @@
 // ignore_for_file: type=lint
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:auto_route/auto_route.dart' as _i8;
-import 'package:flutter/material.dart' as _i9;
+import 'package:auto_route/auto_route.dart' as _i10;
+import 'package:auto_route/empty_router_widgets.dart' as _i6;
+import 'package:flutter/material.dart' as _i11;
 import 'package:rdna_delivery/src/features/authentication/login/presentation/pages/pages.dart'
     as _i2;
 import 'package:rdna_delivery/src/features/authentication/reset-password/presentation/pages/pages.dart'
@@ -24,17 +25,19 @@ import 'package:rdna_delivery/src/features/home/presentation/pages/pages.dart'
 import 'package:rdna_delivery/src/features/notifications/presentation/pages/pages.dart'
     as _i7;
 import 'package:rdna_delivery/src/features/order-list/presentation/pages/pages.dart'
-    as _i6;
+    as _i8;
+import 'package:rdna_delivery/src/features/order_details/pages/pages.dart'
+    as _i9;
 import 'package:rdna_delivery/src/features/splash_page/splash_page.dart' as _i1;
 
-class AppRouter extends _i8.RootStackRouter {
-  AppRouter([_i9.GlobalKey<_i9.NavigatorState>? navigatorKey])
+class AppRouter extends _i10.RootStackRouter {
+  AppRouter([_i11.GlobalKey<_i11.NavigatorState>? navigatorKey])
       : super(navigatorKey);
 
   @override
-  final Map<String, _i8.PageFactory> pagesMap = {
+  final Map<String, _i10.PageFactory> pagesMap = {
     SplashRoute.name: (routeData) {
-      return _i8.AdaptivePage<void>(
+      return _i10.AdaptivePage<void>(
         routeData: routeData,
         child: const _i1.SplashPage(),
       );
@@ -42,7 +45,7 @@ class AppRouter extends _i8.RootStackRouter {
     LoginRoute.name: (routeData) {
       final args = routeData.argsAs<LoginRouteArgs>(
           orElse: () => const LoginRouteArgs());
-      return _i8.AdaptivePage<void>(
+      return _i10.AdaptivePage<void>(
         routeData: routeData,
         child: _i2.LoginPage(
           key: args.key,
@@ -51,86 +54,110 @@ class AppRouter extends _i8.RootStackRouter {
       );
     },
     ForgetPasswordRoute.name: (routeData) {
-      return _i8.AdaptivePage<void>(
+      return _i10.AdaptivePage<void>(
         routeData: routeData,
         child: const _i3.ForgetPasswordPage(),
       );
     },
     CheckInboxRoute.name: (routeData) {
-      return _i8.AdaptivePage<void>(
+      return _i10.AdaptivePage<void>(
         routeData: routeData,
         child: const _i3.CheckInboxPage(),
       );
     },
     ResetPasswordRoute.name: (routeData) {
-      return _i8.AdaptivePage<void>(
+      return _i10.AdaptivePage<void>(
         routeData: routeData,
         child: const _i3.ResetPasswordPage(),
       );
     },
     Dashboard.name: (routeData) {
-      return _i8.AdaptivePage<void>(
+      return _i10.AdaptivePage<void>(
         routeData: routeData,
         child: const _i4.DashboardPage(),
       );
     },
     HomeRoute.name: (routeData) {
-      return _i8.AdaptivePage<void>(
+      return _i10.AdaptivePage<void>(
         routeData: routeData,
         child: const _i5.HomePage(),
       );
     },
-    OrderListRoute.name: (routeData) {
-      return _i8.AdaptivePage<void>(
+    OrderListRouter.name: (routeData) {
+      return _i10.AdaptivePage<void>(
         routeData: routeData,
-        child: const _i6.OrderListPage(),
+        child: const _i6.EmptyRouterPage(),
       );
     },
     NotificationsRoute.name: (routeData) {
-      return _i8.AdaptivePage<void>(
+      return _i10.AdaptivePage<void>(
         routeData: routeData,
         child: const _i7.NotificationsPage(),
+      );
+    },
+    OrderListRoute.name: (routeData) {
+      return _i10.AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const _i8.OrderListPage(),
+      );
+    },
+    OrderDetailsRoute.name: (routeData) {
+      return _i10.AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const _i9.OrderDetailsPage(),
       );
     },
   };
 
   @override
-  List<_i8.RouteConfig> get routes => [
-        _i8.RouteConfig(
+  List<_i10.RouteConfig> get routes => [
+        _i10.RouteConfig(
           SplashRoute.name,
           path: '/',
         ),
-        _i8.RouteConfig(
+        _i10.RouteConfig(
           LoginRoute.name,
           path: '/login-page',
         ),
-        _i8.RouteConfig(
+        _i10.RouteConfig(
           ForgetPasswordRoute.name,
           path: '/forget-password-page',
         ),
-        _i8.RouteConfig(
+        _i10.RouteConfig(
           CheckInboxRoute.name,
           path: '/check-inbox-page',
         ),
-        _i8.RouteConfig(
+        _i10.RouteConfig(
           ResetPasswordRoute.name,
           path: '/reset-password-page',
         ),
-        _i8.RouteConfig(
+        _i10.RouteConfig(
           Dashboard.name,
           path: '/',
           children: [
-            _i8.RouteConfig(
+            _i10.RouteConfig(
               HomeRoute.name,
               path: 'home',
               parent: Dashboard.name,
             ),
-            _i8.RouteConfig(
-              OrderListRoute.name,
+            _i10.RouteConfig(
+              OrderListRouter.name,
               path: 'order-list',
               parent: Dashboard.name,
+              children: [
+                _i10.RouteConfig(
+                  OrderListRoute.name,
+                  path: '',
+                  parent: OrderListRouter.name,
+                ),
+                _i10.RouteConfig(
+                  OrderDetailsRoute.name,
+                  path: 'order-details',
+                  parent: OrderListRouter.name,
+                ),
+              ],
             ),
-            _i8.RouteConfig(
+            _i10.RouteConfig(
               NotificationsRoute.name,
               path: 'notifications',
               parent: Dashboard.name,
@@ -142,7 +169,7 @@ class AppRouter extends _i8.RootStackRouter {
 
 /// generated route for
 /// [_i1.SplashPage]
-class SplashRoute extends _i8.PageRouteInfo<void> {
+class SplashRoute extends _i10.PageRouteInfo<void> {
   const SplashRoute()
       : super(
           SplashRoute.name,
@@ -154,9 +181,9 @@ class SplashRoute extends _i8.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i2.LoginPage]
-class LoginRoute extends _i8.PageRouteInfo<LoginRouteArgs> {
+class LoginRoute extends _i10.PageRouteInfo<LoginRouteArgs> {
   LoginRoute({
-    _i9.Key? key,
+    _i11.Key? key,
     bool? isBack = false,
   }) : super(
           LoginRoute.name,
@@ -176,7 +203,7 @@ class LoginRouteArgs {
     this.isBack = false,
   });
 
-  final _i9.Key? key;
+  final _i11.Key? key;
 
   final bool? isBack;
 
@@ -188,7 +215,7 @@ class LoginRouteArgs {
 
 /// generated route for
 /// [_i3.ForgetPasswordPage]
-class ForgetPasswordRoute extends _i8.PageRouteInfo<void> {
+class ForgetPasswordRoute extends _i10.PageRouteInfo<void> {
   const ForgetPasswordRoute()
       : super(
           ForgetPasswordRoute.name,
@@ -200,7 +227,7 @@ class ForgetPasswordRoute extends _i8.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.CheckInboxPage]
-class CheckInboxRoute extends _i8.PageRouteInfo<void> {
+class CheckInboxRoute extends _i10.PageRouteInfo<void> {
   const CheckInboxRoute()
       : super(
           CheckInboxRoute.name,
@@ -212,7 +239,7 @@ class CheckInboxRoute extends _i8.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.ResetPasswordPage]
-class ResetPasswordRoute extends _i8.PageRouteInfo<void> {
+class ResetPasswordRoute extends _i10.PageRouteInfo<void> {
   const ResetPasswordRoute()
       : super(
           ResetPasswordRoute.name,
@@ -224,8 +251,8 @@ class ResetPasswordRoute extends _i8.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i4.DashboardPage]
-class Dashboard extends _i8.PageRouteInfo<void> {
-  const Dashboard({List<_i8.PageRouteInfo>? children})
+class Dashboard extends _i10.PageRouteInfo<void> {
+  const Dashboard({List<_i10.PageRouteInfo>? children})
       : super(
           Dashboard.name,
           path: '/',
@@ -237,7 +264,7 @@ class Dashboard extends _i8.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i5.HomePage]
-class HomeRoute extends _i8.PageRouteInfo<void> {
+class HomeRoute extends _i10.PageRouteInfo<void> {
   const HomeRoute()
       : super(
           HomeRoute.name,
@@ -248,20 +275,21 @@ class HomeRoute extends _i8.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i6.OrderListPage]
-class OrderListRoute extends _i8.PageRouteInfo<void> {
-  const OrderListRoute()
+/// [_i6.EmptyRouterPage]
+class OrderListRouter extends _i10.PageRouteInfo<void> {
+  const OrderListRouter({List<_i10.PageRouteInfo>? children})
       : super(
-          OrderListRoute.name,
+          OrderListRouter.name,
           path: 'order-list',
+          initialChildren: children,
         );
 
-  static const String name = 'OrderListRoute';
+  static const String name = 'OrderListRouter';
 }
 
 /// generated route for
 /// [_i7.NotificationsPage]
-class NotificationsRoute extends _i8.PageRouteInfo<void> {
+class NotificationsRoute extends _i10.PageRouteInfo<void> {
   const NotificationsRoute()
       : super(
           NotificationsRoute.name,
@@ -269,4 +297,28 @@ class NotificationsRoute extends _i8.PageRouteInfo<void> {
         );
 
   static const String name = 'NotificationsRoute';
+}
+
+/// generated route for
+/// [_i8.OrderListPage]
+class OrderListRoute extends _i10.PageRouteInfo<void> {
+  const OrderListRoute()
+      : super(
+          OrderListRoute.name,
+          path: '',
+        );
+
+  static const String name = 'OrderListRoute';
+}
+
+/// generated route for
+/// [_i9.OrderDetailsPage]
+class OrderDetailsRoute extends _i10.PageRouteInfo<void> {
+  const OrderDetailsRoute()
+      : super(
+          OrderDetailsRoute.name,
+          path: 'order-details',
+        );
+
+  static const String name = 'OrderDetailsRoute';
 }

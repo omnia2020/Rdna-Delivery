@@ -30,7 +30,7 @@ class _DashboardPageState extends State<DashboardPage> {
     return AutoTabsScaffold(
       routes: [
         const HomeRoute(),
-        const OrderListRoute(),
+        const OrderListRouter(),
         const NotificationsRoute(),
       ],
       animationCurve: Curves.fastLinearToSlowEaseIn,

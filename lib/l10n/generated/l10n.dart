@@ -609,6 +609,186 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Order Details`
+  String get orderDetails {
+    return Intl.message(
+      'Order Details',
+      name: 'orderDetails',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shipping Address`
+  String get shippingAddress {
+    return Intl.message(
+      'Shipping Address',
+      name: 'shippingAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Directions`
+  String get directions {
+    return Intl.message(
+      'Directions',
+      name: 'directions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone No`
+  String get phoneNo {
+    return Intl.message(
+      'Phone No',
+      name: 'phoneNo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fast Call`
+  String get fastCall {
+    return Intl.message(
+      'Fast Call',
+      name: 'fastCall',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Note`
+  String get note {
+    return Intl.message(
+      'Note',
+      name: 'note',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment Method`
+  String get paymentMethod {
+    return Intl.message(
+      'Payment Method',
+      name: 'paymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cash On Delivery`
+  String get cashOnDelivery {
+    return Intl.message(
+      'Cash On Delivery',
+      name: 'cashOnDelivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Customer Already Paid`
+  String get customeAlreadyPaid {
+    return Intl.message(
+      'Customer Already Paid',
+      name: 'customeAlreadyPaid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Summary`
+  String get orderSummary {
+    return Intl.message(
+      'Order Summary',
+      name: 'orderSummary',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Items`
+  String get orderItems {
+    return Intl.message(
+      'Order Items',
+      name: 'orderItems',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shipping Fees`
+  String get shippingFees {
+    return Intl.message(
+      'Shipping Fees',
+      name: 'shippingFees',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total`
+  String get total {
+    return Intl.message(
+      'Total',
+      name: 'total',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Delivering Order`
+  String get confirmDeliveringOrder {
+    return Intl.message(
+      'Confirm Delivering Order',
+      name: 'confirmDeliveringOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose the method of payment`
+  String get chooseTheMethodOfPayment {
+    return Intl.message(
+      'Choose the method of payment',
+      name: 'chooseTheMethodOfPayment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Card On Delivery`
+  String get cardOnDelivery {
+    return Intl.message(
+      'Card On Delivery',
+      name: 'cardOnDelivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thank You For Delivering Order`
+  String get thankUForDeliveringOrder {
+    return Intl.message(
+      'Thank You For Delivering Order',
+      name: 'thankUForDeliveringOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `EGP`
+  String get egp {
+    return Intl.message(
+      'EGP',
+      name: 'egp',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

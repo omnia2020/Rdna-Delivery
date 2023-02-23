@@ -72,6 +72,7 @@ class AppStyles {
         fontSize: 15.sp,
         fontWeight: FontWeight.w400,
         color: AppColors.contentBlackColor,
+        //  height: 1.4,
       );
   static TextStyle get content14pxRegular => TextStyle(
         fontSize: 14.sp,
@@ -405,6 +406,16 @@ class AppStyles {
         fontSize: 16.sp,
         fontWeight: FontWeight.bold,
         color: AppColors.blackColor,
+      );
+  static TextStyle get lightBlack3030_16Medium => TextStyle(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w500,
+        color: AppColors.lightBlack3030,
+      );
+  static TextStyle get lightBlack3030_16MediumOpacity => TextStyle(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w500,
+        color: AppColors.lightBlack3030.withOpacity(0.5),
       );
 }
 
