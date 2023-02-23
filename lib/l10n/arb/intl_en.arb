@@ -94,6 +94,13 @@
     "orderStatus":"Order Status",
     "haveUDeliveredTheOrder":"Have you delivered the order?",
     "yesOrderIsDelivered":"Yes, Order Is Delivered",
-    "noThereIsAnIssueWithOrder":"No, There Is An Issue With Order"
+    "noThereIsAnIssueWithOrder":"No, There Is An Issue With Order",
+
+    "issueWithTheOrder":"Issue with the order?",
+    "pleaseTellUsMoreInfoAboutSituation":"Please tell us more information regarding your current situation with the customer",
+    "whatIsHappened":"What's Happened",
+    "tellUsYourSituation":"Tell Us Your Situation",
+    "submit":"Submit"
+
     
 }

@@ -829,6 +829,56 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Issue with the order?`
+  String get issueWithTheOrder {
+    return Intl.message(
+      'Issue with the order?',
+      name: 'issueWithTheOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please tell us more information regarding your current situation with the customer`
+  String get pleaseTellUsMoreInfoAboutSituation {
+    return Intl.message(
+      'Please tell us more information regarding your current situation with the customer',
+      name: 'pleaseTellUsMoreInfoAboutSituation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What's Happened`
+  String get whatIsHappened {
+    return Intl.message(
+      'What\'s Happened',
+      name: 'whatIsHappened',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tell Us Your Situation`
+  String get tellUsYourSituation {
+    return Intl.message(
+      'Tell Us Your Situation',
+      name: 'tellUsYourSituation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Submit`
+  String get submit {
+    return Intl.message(
+      'Submit',
+      name: 'submit',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

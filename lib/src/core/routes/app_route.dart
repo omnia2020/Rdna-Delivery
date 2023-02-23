@@ -8,6 +8,7 @@ import 'package:rdna_delivery/src/features/notifications/presentation/pages/page
 import 'package:rdna_delivery/src/features/order-list/presentation/pages/pages.dart';
 import 'package:rdna_delivery/src/features/order_details/pages/pages.dart';
 import 'package:rdna_delivery/src/features/order_items/pages/pages.dart';
+import 'package:rdna_delivery/src/features/report_order/pages/pages.dart';
 import 'package:rdna_delivery/src/features/splash_page/splash_page.dart';
 export 'package:auto_route/auto_route.dart';
 
@@ -55,6 +56,7 @@ export 'package:auto_route/auto_route.dart';
         ),
       ],
     ),
+    AutoRoute<void>(page: ReportOrderPage),
   ],
 )
 class $AppRouter {}

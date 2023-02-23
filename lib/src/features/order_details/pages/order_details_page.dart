@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/widgets/widgets.dart';
-import 'package:rdna_delivery/src/features/order_details/sheets/order_status_sheet.dart';
+import 'package:rdna_delivery/src/features/order_details/sheets/sheets.dart';
 import 'package:rdna_delivery/src/features/order_details/widgets/widgets.dart';
 
 class OrderDetailsPage extends StatelessWidget {
@@ -61,7 +61,7 @@ class OrderDetailsPage extends StatelessWidget {
               ),
               16.verticalSpace,
               const OrderPaymentMethod(
-                ifPaid: true,
+                ifPaid: false,
               ),
               const Divider(
                 color: AppColors.greyColorE5,

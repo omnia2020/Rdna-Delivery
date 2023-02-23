@@ -67,6 +67,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "hello": MessageLookupByLibrary.simpleMessage("مرحبا"),
         "idle": MessageLookupByLibrary.simpleMessage("غير نشط"),
         "invisible": MessageLookupByLibrary.simpleMessage("غير مرئى"),
+        "issueWithTheOrder":
+            MessageLookupByLibrary.simpleMessage("توجد مشكلة في الطلب؟"),
         "items": MessageLookupByLibrary.simpleMessage("منتج"),
         "kpi": MessageLookupByLibrary.simpleMessage("مؤشر"),
         "lastMonthKpi":
@@ -103,6 +105,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("من فضلك اكتب كلمة السر"),
         "pleaseEnterYourPhoneOrEmail": MessageLookupByLibrary.simpleMessage(
             "من فضلك اكتب البريد الالكتروني او رقم الموبايل"),
+        "pleaseTellUsMoreInfoAboutSituation":
+            MessageLookupByLibrary.simpleMessage(
+                "يرجى إخبارنا بمزيد من المعلومات بخصوص وضعك الحالي مع العميل"),
         "pleaseWriteUrPhoneToLogin": MessageLookupByLibrary.simpleMessage(
             "يرجى كتابة رقم هاتفك أو بريدك الإلكتروني لتسجيل الدخول إلى حسابك"),
         "pleaseWriteYourPhoneOrmail": MessageLookupByLibrary.simpleMessage(
@@ -116,6 +121,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("عنوان التوصيل"),
         "shippingFees": MessageLookupByLibrary.simpleMessage("مصاريف الشحن"),
         "status": MessageLookupByLibrary.simpleMessage("الحالة"),
+        "submit": MessageLookupByLibrary.simpleMessage("تقديم"),
+        "tellUsYourSituation":
+            MessageLookupByLibrary.simpleMessage("أخبرنا بموقفك"),
         "thankUForDeliveringOrder":
             MessageLookupByLibrary.simpleMessage("شكرا لك علي توصيل الطلب"),
         "theForgetCodeIsSent": MessageLookupByLibrary.simpleMessage(
@@ -125,6 +133,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "لقد تم إرسال بريد إلكتروني إلى عنوان البريد الإلكتروني المذكور في صندوق الوارد الخاص بك ، يرجى التحقق منه لإعادة تعيين كلمة المرور الخاصة بك"),
         "welcomeToDeliveryApp":
             MessageLookupByLibrary.simpleMessage("مرحبا بك في تطبيق التوصيل"),
+        "whatIsHappened": MessageLookupByLibrary.simpleMessage("ماذا حدث"),
         "yes": MessageLookupByLibrary.simpleMessage("نعم"),
         "yesOrderIsDelivered":
             MessageLookupByLibrary.simpleMessage("نعم، تم تسليم الطلب"),

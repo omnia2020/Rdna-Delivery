@@ -2,19 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
 import 'package:rdna_delivery/src/core/routes/app_route.dart';
-import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/features/order_details/widgets/widgets.dart';
 
-class OrderStatusSheet extends StatefulWidget {
-  const OrderStatusSheet({
+class PaymentMethodSheet extends StatefulWidget {
+  const PaymentMethodSheet({
     super.key,
   });
   @override
-  State<OrderStatusSheet> createState() => _OrderStatusSheetState();
+  State<PaymentMethodSheet> createState() => _PaymentMethodSheetState();
 }
 
-class _OrderStatusSheetState extends State<OrderStatusSheet> {
+class _PaymentMethodSheetState extends State<PaymentMethodSheet> {
   int? selectedVal = 0;
   @override
   Widget build(BuildContext context) {
@@ -35,15 +34,15 @@ class _OrderStatusSheetState extends State<OrderStatusSheet> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    l10n.orderStatus,
+                    l10n.paymentMethod,
                     style: AppStyles.content18pxMedium,
                   ),
                   30.verticalSpace,
-                  Text('${l10n.haveUDeliveredTheOrder}',
+                  Text('${l10n.chooseTheMethodOfPayment}',
                       style: AppStyles.content16pxRegular),
                   16.verticalSpace,
                   RadioLstTile(
-                    title: l10n.yesOrderIsDelivered,
+                    title: l10n.cashOnDelivery,
                     borderColor: AppColors.yellowColor,
                     groupVal: selectedVal!,
                     val: 1,
@@ -56,7 +55,7 @@ class _OrderStatusSheetState extends State<OrderStatusSheet> {
                   ),
                   16.verticalSpace,
                   RadioLstTile(
-                    title: l10n.noThereIsAnIssueWithOrder,
+                    title: l10n.cardOnDelivery,
                     borderColor: AppColors.borderDarkGreyColor,
                     groupVal: selectedVal!,
                     val: 2,
@@ -64,7 +63,7 @@ class _OrderStatusSheetState extends State<OrderStatusSheet> {
                       setState(() {
                         selectedVal = val;
                       });
-                      context.router.push(const ReportOrderRoute());
+                      context.router.pop();
                     },
                   ),
                 ],

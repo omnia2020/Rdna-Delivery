@@ -94,9 +94,13 @@
     "orderStatus":"حالة الطلب",
     "haveUDeliveredTheOrder":"هل قمت بتسليم الطلب؟",
     "yesOrderIsDelivered":"نعم، تم تسليم الطلب",
-    "noThereIsAnIssueWithOrder":"لا، توجد مشكلة في الطلب"
+    "noThereIsAnIssueWithOrder":"لا، توجد مشكلة في الطلب",
 
-
+    "issueWithTheOrder":"توجد مشكلة في الطلب؟",
+    "pleaseTellUsMoreInfoAboutSituation":"يرجى إخبارنا بمزيد من المعلومات بخصوص وضعك الحالي مع العميل",
+    "whatIsHappened":"ماذا حدث",
+    "tellUsYourSituation":"أخبرنا بموقفك",
+    "submit":"تقديم"
 
 
 }

@@ -65,6 +65,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "hello": MessageLookupByLibrary.simpleMessage("Hello"),
         "idle": MessageLookupByLibrary.simpleMessage("Idle"),
         "invisible": MessageLookupByLibrary.simpleMessage("Invisible"),
+        "issueWithTheOrder":
+            MessageLookupByLibrary.simpleMessage("Issue with the order?"),
         "items": MessageLookupByLibrary.simpleMessage("Items"),
         "kpi": MessageLookupByLibrary.simpleMessage("Kpi"),
         "lastMonthKpi": MessageLookupByLibrary.simpleMessage("Last Months KPI"),
@@ -101,6 +103,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Please enter your password"),
         "pleaseEnterYourPhoneOrEmail": MessageLookupByLibrary.simpleMessage(
             "Please enter your email or phone number"),
+        "pleaseTellUsMoreInfoAboutSituation": MessageLookupByLibrary.simpleMessage(
+            "Please tell us more information regarding your current situation with the customer"),
         "pleaseWriteUrPhoneToLogin": MessageLookupByLibrary.simpleMessage(
             "Please write your phone or email address in order to login into your account"),
         "pleaseWriteYourPhoneOrmail": MessageLookupByLibrary.simpleMessage(
@@ -113,6 +117,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Shipping Address"),
         "shippingFees": MessageLookupByLibrary.simpleMessage("Shipping Fees"),
         "status": MessageLookupByLibrary.simpleMessage("Status"),
+        "submit": MessageLookupByLibrary.simpleMessage("Submit"),
+        "tellUsYourSituation":
+            MessageLookupByLibrary.simpleMessage("Tell Us Your Situation"),
         "thankUForDeliveringOrder": MessageLookupByLibrary.simpleMessage(
             "Thank You For Delivering Order"),
         "theForgetCodeIsSent": MessageLookupByLibrary.simpleMessage(
@@ -122,6 +129,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "We\'ve been sent an email to the mentioned email address in your inbox please check it in order to reset your password"),
         "welcomeToDeliveryApp":
             MessageLookupByLibrary.simpleMessage("Welcome To Delivery App"),
+        "whatIsHappened":
+            MessageLookupByLibrary.simpleMessage("What\'s Happened"),
         "yes": MessageLookupByLibrary.simpleMessage("Yes"),
         "yesOrderIsDelivered":
             MessageLookupByLibrary.simpleMessage("Yes, Order Is Delivered"),
