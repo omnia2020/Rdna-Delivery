@@ -2,7 +2,6 @@ import 'package:dio/dio.dart';
 import 'package:rdna_delivery/src/core/api/apis.dart';
 import 'package:rdna_delivery/src/core/constants/app_constants.dart';
 
-
 class DioClient {
   DioClient()
       : dio = Dio(
@@ -11,7 +10,7 @@ class DioClient {
             connectTimeout: 5000,
             receiveTimeout: 3000,
             responseType: ResponseType.json,
-            receiveDataWhenStatusError: false,
+            receiveDataWhenStatusError: true,
           ),
         )..interceptors.addAll([
             AuthorizationInterceptor(),

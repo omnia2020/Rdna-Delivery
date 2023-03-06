@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -45,6 +46,7 @@ class _SplashPageState extends State<SplashPage> {
         context.router.popAndPush(LoginRoute());
       }
       if (userToken != '') {
+        log(userToken);
         context.router.popAndPush(const Dashboard());
       } else {
         await Provider.of<AuthProvider>(context, listen: false)
