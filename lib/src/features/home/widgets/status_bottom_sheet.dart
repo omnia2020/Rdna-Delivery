@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
+import 'package:rdna_delivery/src/core/constants/app_constants.dart';
+import 'package:rdna_delivery/src/core/helpers/session_manager.dart';
 import 'package:rdna_delivery/src/core/routes/app_route.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
+import 'package:rdna_delivery/src/features/authentication/providers/auth_provider.dart';
 import 'package:rdna_delivery/src/features/home/widgets/widgets.dart';
+
 
 class StatusBottomSheet extends StatefulWidget {
   const StatusBottomSheet({
@@ -22,43 +27,68 @@ class _StatusBottomSheetState extends State<StatusBottomSheet> {
     return Stack(
       clipBehavior: Clip.none,
       children: [
-        Container(
-          height: MediaQuery.of(context).size.height * 0.30,
-          decoration: new BoxDecoration(
-            color: AppColors.whiteColor,
-            borderRadius: BorderRadius.circular(20.r),
-          ),
-          child: SingleChildScrollView(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 20.h),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    l10n.status,
-                    style: AppStyles.content18pxMedium,
-                  ),
-                  30.verticalSpace,
-                  StatusCardColor(
-                    borderColor: AppColors.borderActiveColor,
-                    color: AppColors.positiveGreenColor,
-                    text: l10n.active,
-                    onTap: () async {},
-                  ),
-                  const Divider(
-                    color: AppColors.greyColorF5,
-                    thickness: 2,
-                  ),
-                  StatusCardColor(
-                    borderColor: AppColors.borderInvisibleColor,
-                    color: AppColors.invisibleColor,
-                    text: l10n.invisible,
-                    onTap: () async {},
-                  ),
-                ],
+        Consumer<AuthProvider>(
+          builder: (_, state, __) {
+            return Container(
+              height: MediaQuery.of(context).size.height * 0.30,
+              decoration: new BoxDecoration(
+                color: AppColors.whiteColor,
+                borderRadius: BorderRadius.circular(20.r),
               ),
-            ),
-          ),
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 16.w, vertical: 20.h),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        l10n.status,
+                        style: AppStyles.content18pxMedium,
+                      ),
+                      30.verticalSpace,
+                      StatusCardColor(
+                        borderColor: AppColors.borderActiveColor,
+                        color: AppColors.positiveGreenColor,
+                        text: l10n.active,
+                        onTap: () async {
+                          await state.userStartSession();
+                          if (state.userActiveModel != null) {
+                            await sessionManager.setAciveStatus(
+                                status: AppConstants.userStatus[0].status
+                                    ?.toLowerCase());
+                            setState(() {});
+                            context.router.pop();
+                            widget.onTap();
+                          }
+                        },
+                      ),
+                      const Divider(
+                        color: AppColors.greyColorF5,
+                        thickness: 2,
+                      ),
+                      StatusCardColor(
+                        borderColor: AppColors.borderInvisibleColor,
+                        color: AppColors.invisibleColor,
+                        text: l10n.invisible,
+                        onTap: () async {
+                          await state.userEndSession();
+                          if (state.userActiveModel != null) {
+                            await sessionManager.setAciveStatus(
+                                status: AppConstants.userStatus[1].status
+                                    ?.toLowerCase());
+                            setState(() {});
+                            context.router.pop();
+                            widget.onTap();
+                          }
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
         ),
         Positioned(
           right: 0,
