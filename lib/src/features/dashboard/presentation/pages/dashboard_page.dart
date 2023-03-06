@@ -32,6 +32,7 @@ class _DashboardPageState extends State<DashboardPage> {
         const HomeRoute(),
         const OrderListRouter(),
         const NotificationsRoute(),
+        const AccountSettingRouter(),
       ],
       animationCurve: Curves.fastLinearToSlowEaseIn,
       bottomNavigationBuilder: (_, tabsRouter) => InkWell(
@@ -110,6 +111,23 @@ class _DashboardPageState extends State<DashboardPage> {
                       ),
                 title: Text(
                   l10n.notifications,
+                  style: AppStyles.title14Medium,
+                ),
+                textAlign: TextAlign.center,
+                activeColor: AppColors.yellowColor,
+              ),
+              BottomNavyBarItem(
+                icon: tabsRouter.activeIndex == 3
+                    ? SvgPicture.asset(
+                        AssetsHelper.menuIcon,
+                        color: AppColors.onBoardingTitleColor,
+                      )
+                    : SvgPicture.asset(
+                        AssetsHelper.menuIcon,
+                        color: AppColors.onBoardingTitleColor.withOpacity(0.5),
+                      ),
+                title: Text(
+                  l10n.profile,
                   style: AppStyles.title14Medium,
                 ),
                 textAlign: TextAlign.center,

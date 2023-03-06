@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "accountSettings":
+            MessageLookupByLibrary.simpleMessage("إعدادات الحساب"),
         "active": MessageLookupByLibrary.simpleMessage("نشط"),
         "alert": MessageLookupByLibrary.simpleMessage("تنبيه"),
         "back": MessageLookupByLibrary.simpleMessage("رجوع"),
@@ -29,6 +31,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("الدفع بالبطاقة عند الاستلام"),
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("الدفع عند الاستلام"),
+        "changeAccountSettingEasily": MessageLookupByLibrary.simpleMessage(
+            "قم بتغيير إعدادات حسابك بسهولة"),
         "checkUrInbox": MessageLookupByLibrary.simpleMessage(
             "تحقق من الصندوق الوارد الخاص ببريدك الالكتروني"),
         "chooseTheMethodOfPayment":
@@ -61,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetPass": MessageLookupByLibrary.simpleMessage("نسيت كلمة السر؟"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر"),
+        "fullName": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
         "gotReady": MessageLookupByLibrary.simpleMessage("جاهز"),
         "haveUDeliveredTheOrder":
             MessageLookupByLibrary.simpleMessage("هل قمت بتسليم الطلب؟"),
@@ -71,11 +76,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("توجد مشكلة في الطلب؟"),
         "items": MessageLookupByLibrary.simpleMessage("منتج"),
         "kpi": MessageLookupByLibrary.simpleMessage("مؤشر"),
+        "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "lastMonthKpi":
             MessageLookupByLibrary.simpleMessage("مؤشرات الشهور الماضية"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "mobileNoOrMail":
             MessageLookupByLibrary.simpleMessage("رقم الهاتف او البريد"),
+        "mobileNumber": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
         "nameIsRequired": MessageLookupByLibrary.simpleMessage("الاسم مطلوب"),
         "nameMustHasOnlyLetters": MessageLookupByLibrary.simpleMessage(
             "يجب ان يحتوي الاسم علي حروف فقط"),
@@ -95,6 +103,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "passIsRequired":
             MessageLookupByLibrary.simpleMessage("كلمة السر مطلوبة"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "passwordIsResetSuccessfullyLoginAgain":
+            MessageLookupByLibrary.simpleMessage(
+                "تم إعادة تعيين كلمة المرور بنجاح ، يرجى تسجيل الدخول مرة أخرى"),
         "passwordMustBeTheSame": MessageLookupByLibrary.simpleMessage(
             "كلمة السر يجب ان تكون متطابقة"),
         "paymentMethod": MessageLookupByLibrary.simpleMessage("طرق الدفع"),
@@ -112,6 +123,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "يرجى كتابة رقم هاتفك أو بريدك الإلكتروني لتسجيل الدخول إلى حسابك"),
         "pleaseWriteYourPhoneOrmail": MessageLookupByLibrary.simpleMessage(
             "يرجى كتابة رقم هاتفك أو بريدك الإلكتروني لتسجيل الدخول إلى حسابك"),
+        "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+        "profileIsUpdated":
+            MessageLookupByLibrary.simpleMessage("تم تعديل الملف الشخصي بنجاح"),
         "resetPassword":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
         "respondTime": MessageLookupByLibrary.simpleMessage("وقت الاستجابة"),
@@ -122,6 +136,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "shippingFees": MessageLookupByLibrary.simpleMessage("مصاريف الشحن"),
         "status": MessageLookupByLibrary.simpleMessage("الحالة"),
         "submit": MessageLookupByLibrary.simpleMessage("تقديم"),
+        "successfullyLoggedIn":
+            MessageLookupByLibrary.simpleMessage("تم تسجيل الدخول بنجاح"),
+        "successfullyLogout":
+            MessageLookupByLibrary.simpleMessage("تم تسجيل الخروج بنجاح"),
         "tellUsYourSituation":
             MessageLookupByLibrary.simpleMessage("أخبرنا بموقفك"),
         "thankUForDeliveringOrder":
@@ -129,6 +147,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "theForgetCodeIsSent": MessageLookupByLibrary.simpleMessage(
             "تم ارسال الكود الى بريدك الالكتروني"),
         "total": MessageLookupByLibrary.simpleMessage("الاجمالى"),
+        "update": MessageLookupByLibrary.simpleMessage("تعديل"),
         "weHaveSentEmailCheckItToResetPass": MessageLookupByLibrary.simpleMessage(
             "لقد تم إرسال بريد إلكتروني إلى عنوان البريد الإلكتروني المذكور في صندوق الوارد الخاص بك ، يرجى التحقق منه لإعادة تعيين كلمة المرور الخاصة بك"),
         "welcomeToDeliveryApp":

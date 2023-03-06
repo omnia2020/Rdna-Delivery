@@ -11,9 +11,11 @@
 // ignore_for_file: type=lint
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:auto_route/auto_route.dart' as _i12;
+import 'package:auto_route/auto_route.dart' as _i14;
 import 'package:auto_route/empty_router_widgets.dart' as _i7;
-import 'package:flutter/material.dart' as _i13;
+import 'package:flutter/material.dart' as _i15;
+import 'package:rdna_delivery/src/features/account_setting/pages/pages.dart'
+    as _i12;
 import 'package:rdna_delivery/src/features/authentication/login/presentation/pages/pages.dart'
     as _i2;
 import 'package:rdna_delivery/src/features/authentication/reset-password/presentation/pages/pages.dart'
@@ -30,18 +32,20 @@ import 'package:rdna_delivery/src/features/order_details/pages/pages.dart'
     as _i10;
 import 'package:rdna_delivery/src/features/order_items/pages/pages.dart'
     as _i11;
+import 'package:rdna_delivery/src/features/profile/presentation/pages/pages.dart'
+    as _i13;
 import 'package:rdna_delivery/src/features/report_order/pages/pages.dart'
     as _i5;
 import 'package:rdna_delivery/src/features/splash_page/splash_page.dart' as _i1;
 
-class AppRouter extends _i12.RootStackRouter {
-  AppRouter([_i13.GlobalKey<_i13.NavigatorState>? navigatorKey])
+class AppRouter extends _i14.RootStackRouter {
+  AppRouter([_i15.GlobalKey<_i15.NavigatorState>? navigatorKey])
       : super(navigatorKey);
 
   @override
-  final Map<String, _i12.PageFactory> pagesMap = {
+  final Map<String, _i14.PageFactory> pagesMap = {
     SplashRoute.name: (routeData) {
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: const _i1.SplashPage(),
       );
@@ -49,7 +53,7 @@ class AppRouter extends _i12.RootStackRouter {
     LoginRoute.name: (routeData) {
       final args = routeData.argsAs<LoginRouteArgs>(
           orElse: () => const LoginRouteArgs());
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: _i2.LoginPage(
           key: args.key,
@@ -58,134 +62,169 @@ class AppRouter extends _i12.RootStackRouter {
       );
     },
     ForgetPasswordRoute.name: (routeData) {
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: const _i3.ForgetPasswordPage(),
       );
     },
     CheckInboxRoute.name: (routeData) {
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: const _i3.CheckInboxPage(),
       );
     },
     ResetPasswordRoute.name: (routeData) {
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: const _i3.ResetPasswordPage(),
       );
     },
     Dashboard.name: (routeData) {
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: const _i4.DashboardPage(),
       );
     },
     ReportOrderRoute.name: (routeData) {
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: const _i5.ReportOrderPage(),
       );
     },
     HomeRoute.name: (routeData) {
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: const _i6.HomePage(),
       );
     },
     OrderListRouter.name: (routeData) {
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: const _i7.EmptyRouterPage(),
       );
     },
     NotificationsRoute.name: (routeData) {
-      return _i12.AdaptivePage<void>(
+      return _i14.AdaptivePage<void>(
         routeData: routeData,
         child: const _i8.NotificationsPage(),
       );
     },
+    AccountSettingRouter.name: (routeData) {
+      return _i14.AdaptivePage<void>(
+        routeData: routeData,
+        child: const _i7.EmptyRouterPage(),
+      );
+    },
     OrderListRoute.name: (routeData) {
-      return _i12.AdaptivePage<dynamic>(
+      return _i14.AdaptivePage<dynamic>(
         routeData: routeData,
         child: const _i9.OrderListPage(),
       );
     },
     OrderDetailsRoute.name: (routeData) {
-      return _i12.AdaptivePage<dynamic>(
+      return _i14.AdaptivePage<dynamic>(
         routeData: routeData,
         child: const _i10.OrderDetailsPage(),
       );
     },
     OrderItemsRoute.name: (routeData) {
-      return _i12.AdaptivePage<dynamic>(
+      return _i14.AdaptivePage<dynamic>(
         routeData: routeData,
         child: const _i11.OrderItemsPage(),
+      );
+    },
+    AccountSettingRoute.name: (routeData) {
+      return _i14.AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const _i12.AccountSettingPage(),
+      );
+    },
+    ProfileRoute.name: (routeData) {
+      return _i14.AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const _i13.ProfilePage(),
       );
     },
   };
 
   @override
-  List<_i12.RouteConfig> get routes => [
-        _i12.RouteConfig(
+  List<_i14.RouteConfig> get routes => [
+        _i14.RouteConfig(
           SplashRoute.name,
           path: '/',
         ),
-        _i12.RouteConfig(
+        _i14.RouteConfig(
           LoginRoute.name,
           path: '/login-page',
         ),
-        _i12.RouteConfig(
+        _i14.RouteConfig(
           ForgetPasswordRoute.name,
           path: '/forget-password-page',
         ),
-        _i12.RouteConfig(
+        _i14.RouteConfig(
           CheckInboxRoute.name,
           path: '/check-inbox-page',
         ),
-        _i12.RouteConfig(
+        _i14.RouteConfig(
           ResetPasswordRoute.name,
           path: '/reset-password-page',
         ),
-        _i12.RouteConfig(
+        _i14.RouteConfig(
           Dashboard.name,
           path: '/',
           children: [
-            _i12.RouteConfig(
+            _i14.RouteConfig(
               HomeRoute.name,
               path: 'home',
               parent: Dashboard.name,
             ),
-            _i12.RouteConfig(
+            _i14.RouteConfig(
               OrderListRouter.name,
               path: 'order-list',
               parent: Dashboard.name,
               children: [
-                _i12.RouteConfig(
+                _i14.RouteConfig(
                   OrderListRoute.name,
                   path: '',
                   parent: OrderListRouter.name,
                 ),
-                _i12.RouteConfig(
+                _i14.RouteConfig(
                   OrderDetailsRoute.name,
                   path: 'order-details',
                   parent: OrderListRouter.name,
                 ),
-                _i12.RouteConfig(
+                _i14.RouteConfig(
                   OrderItemsRoute.name,
                   path: 'order-items',
                   parent: OrderListRouter.name,
                 ),
               ],
             ),
-            _i12.RouteConfig(
+            _i14.RouteConfig(
               NotificationsRoute.name,
               path: 'notifications',
               parent: Dashboard.name,
             ),
+            _i14.RouteConfig(
+              AccountSettingRouter.name,
+              path: 'account-setting',
+              parent: Dashboard.name,
+              children: [
+                _i14.RouteConfig(
+                  AccountSettingRoute.name,
+                  path: '',
+                  parent: AccountSettingRouter.name,
+                ),
+                _i14.RouteConfig(
+                  ProfileRoute.name,
+                  path: 'profile',
+                  parent: AccountSettingRouter.name,
+                ),
+              ],
+            ),
           ],
         ),
-        _i12.RouteConfig(
+        _i14.RouteConfig(
           ReportOrderRoute.name,
           path: '/report-order-page',
         ),
@@ -194,7 +233,7 @@ class AppRouter extends _i12.RootStackRouter {
 
 /// generated route for
 /// [_i1.SplashPage]
-class SplashRoute extends _i12.PageRouteInfo<void> {
+class SplashRoute extends _i14.PageRouteInfo<void> {
   const SplashRoute()
       : super(
           SplashRoute.name,
@@ -206,9 +245,9 @@ class SplashRoute extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i2.LoginPage]
-class LoginRoute extends _i12.PageRouteInfo<LoginRouteArgs> {
+class LoginRoute extends _i14.PageRouteInfo<LoginRouteArgs> {
   LoginRoute({
-    _i13.Key? key,
+    _i15.Key? key,
     bool? isBack = false,
   }) : super(
           LoginRoute.name,
@@ -228,7 +267,7 @@ class LoginRouteArgs {
     this.isBack = false,
   });
 
-  final _i13.Key? key;
+  final _i15.Key? key;
 
   final bool? isBack;
 
@@ -240,7 +279,7 @@ class LoginRouteArgs {
 
 /// generated route for
 /// [_i3.ForgetPasswordPage]
-class ForgetPasswordRoute extends _i12.PageRouteInfo<void> {
+class ForgetPasswordRoute extends _i14.PageRouteInfo<void> {
   const ForgetPasswordRoute()
       : super(
           ForgetPasswordRoute.name,
@@ -252,7 +291,7 @@ class ForgetPasswordRoute extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.CheckInboxPage]
-class CheckInboxRoute extends _i12.PageRouteInfo<void> {
+class CheckInboxRoute extends _i14.PageRouteInfo<void> {
   const CheckInboxRoute()
       : super(
           CheckInboxRoute.name,
@@ -264,7 +303,7 @@ class CheckInboxRoute extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.ResetPasswordPage]
-class ResetPasswordRoute extends _i12.PageRouteInfo<void> {
+class ResetPasswordRoute extends _i14.PageRouteInfo<void> {
   const ResetPasswordRoute()
       : super(
           ResetPasswordRoute.name,
@@ -276,8 +315,8 @@ class ResetPasswordRoute extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i4.DashboardPage]
-class Dashboard extends _i12.PageRouteInfo<void> {
-  const Dashboard({List<_i12.PageRouteInfo>? children})
+class Dashboard extends _i14.PageRouteInfo<void> {
+  const Dashboard({List<_i14.PageRouteInfo>? children})
       : super(
           Dashboard.name,
           path: '/',
@@ -289,7 +328,7 @@ class Dashboard extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i5.ReportOrderPage]
-class ReportOrderRoute extends _i12.PageRouteInfo<void> {
+class ReportOrderRoute extends _i14.PageRouteInfo<void> {
   const ReportOrderRoute()
       : super(
           ReportOrderRoute.name,
@@ -301,7 +340,7 @@ class ReportOrderRoute extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i6.HomePage]
-class HomeRoute extends _i12.PageRouteInfo<void> {
+class HomeRoute extends _i14.PageRouteInfo<void> {
   const HomeRoute()
       : super(
           HomeRoute.name,
@@ -313,8 +352,8 @@ class HomeRoute extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i7.EmptyRouterPage]
-class OrderListRouter extends _i12.PageRouteInfo<void> {
-  const OrderListRouter({List<_i12.PageRouteInfo>? children})
+class OrderListRouter extends _i14.PageRouteInfo<void> {
+  const OrderListRouter({List<_i14.PageRouteInfo>? children})
       : super(
           OrderListRouter.name,
           path: 'order-list',
@@ -326,7 +365,7 @@ class OrderListRouter extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i8.NotificationsPage]
-class NotificationsRoute extends _i12.PageRouteInfo<void> {
+class NotificationsRoute extends _i14.PageRouteInfo<void> {
   const NotificationsRoute()
       : super(
           NotificationsRoute.name,
@@ -337,8 +376,21 @@ class NotificationsRoute extends _i12.PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [_i7.EmptyRouterPage]
+class AccountSettingRouter extends _i14.PageRouteInfo<void> {
+  const AccountSettingRouter({List<_i14.PageRouteInfo>? children})
+      : super(
+          AccountSettingRouter.name,
+          path: 'account-setting',
+          initialChildren: children,
+        );
+
+  static const String name = 'AccountSettingRouter';
+}
+
+/// generated route for
 /// [_i9.OrderListPage]
-class OrderListRoute extends _i12.PageRouteInfo<void> {
+class OrderListRoute extends _i14.PageRouteInfo<void> {
   const OrderListRoute()
       : super(
           OrderListRoute.name,
@@ -350,7 +402,7 @@ class OrderListRoute extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i10.OrderDetailsPage]
-class OrderDetailsRoute extends _i12.PageRouteInfo<void> {
+class OrderDetailsRoute extends _i14.PageRouteInfo<void> {
   const OrderDetailsRoute()
       : super(
           OrderDetailsRoute.name,
@@ -362,7 +414,7 @@ class OrderDetailsRoute extends _i12.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i11.OrderItemsPage]
-class OrderItemsRoute extends _i12.PageRouteInfo<void> {
+class OrderItemsRoute extends _i14.PageRouteInfo<void> {
   const OrderItemsRoute()
       : super(
           OrderItemsRoute.name,
@@ -370,4 +422,28 @@ class OrderItemsRoute extends _i12.PageRouteInfo<void> {
         );
 
   static const String name = 'OrderItemsRoute';
+}
+
+/// generated route for
+/// [_i12.AccountSettingPage]
+class AccountSettingRoute extends _i14.PageRouteInfo<void> {
+  const AccountSettingRoute()
+      : super(
+          AccountSettingRoute.name,
+          path: '',
+        );
+
+  static const String name = 'AccountSettingRoute';
+}
+
+/// generated route for
+/// [_i13.ProfilePage]
+class ProfileRoute extends _i14.PageRouteInfo<void> {
+  const ProfileRoute()
+      : super(
+          ProfileRoute.name,
+          path: 'profile',
+        );
+
+  static const String name = 'ProfileRoute';
 }

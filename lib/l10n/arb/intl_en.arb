@@ -36,6 +36,9 @@
     "enterEmailAddressToResetPass":"Please enter your email address to reset your account password.",
 
     "theForgetCodeIsSent":"The forget code is sent to your email",
+
+    "passwordIsResetSuccessfullyLoginAgain":"Password is reset successfully, Please login again",
+
     
     "email":"Email",
 
@@ -58,6 +61,7 @@
     "notifications":"Notifications",
     "dashboard":"Dashboard",
     "ordersList":"Orders List",
+    "profile":"Profile",
 
     "alert":"Alert",
     "doYouWantToExitTheApp":"Do you want to exit the app?",
@@ -100,7 +104,24 @@
     "pleaseTellUsMoreInfoAboutSituation":"Please tell us more information regarding your current situation with the customer",
     "whatIsHappened":"What's Happened",
     "tellUsYourSituation":"Tell Us Your Situation",
-    "submit":"Submit"
+    "submit":"Submit",
+
+    "successfullyLoggedIn":"Successfully Logged in",
+
+    "accountSettings":"Account Settings",
+    "changeAccountSettingEasily":"Change your account settings easily: Default address, change password, and choose payment methods.",
+    "language":"Language",
+    "logout":"Logout",
+
+    "successfullyLogout":"Successfully Logged out",
+
+    "update":"Update",
+
+    "profileIsUpdated":"Profile is updated successfully",
+
+    "fullName":"Full Name",
+    "mobileNumber":"Mobile Number"
+
 
     
 }

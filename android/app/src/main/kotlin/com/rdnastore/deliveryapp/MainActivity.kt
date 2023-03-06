@@ -1,4 +1,4 @@
-package com.example.rdna_delivery
+package com.rdnastore.deliveryapp
 
 import io.flutter.embedding.android.FlutterActivity
 

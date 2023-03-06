@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "accountSettings":
+            MessageLookupByLibrary.simpleMessage("Account Settings"),
         "active": MessageLookupByLibrary.simpleMessage("Active"),
         "alert": MessageLookupByLibrary.simpleMessage("Alert"),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
@@ -29,6 +31,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Card On Delivery"),
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("Cash On Delivery"),
+        "changeAccountSettingEasily": MessageLookupByLibrary.simpleMessage(
+            "Change your account settings easily: Default address, change password, and choose payment methods."),
         "checkUrInbox":
             MessageLookupByLibrary.simpleMessage("Check your inbox!"),
         "chooseTheMethodOfPayment": MessageLookupByLibrary.simpleMessage(
@@ -59,6 +63,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetPass": MessageLookupByLibrary.simpleMessage("Forget Password?"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
+        "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
         "gotReady": MessageLookupByLibrary.simpleMessage("Got Ready"),
         "haveUDeliveredTheOrder": MessageLookupByLibrary.simpleMessage(
             "Have you delivered the order?"),
@@ -69,10 +74,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Issue with the order?"),
         "items": MessageLookupByLibrary.simpleMessage("Items"),
         "kpi": MessageLookupByLibrary.simpleMessage("Kpi"),
+        "language": MessageLookupByLibrary.simpleMessage("Language"),
         "lastMonthKpi": MessageLookupByLibrary.simpleMessage("Last Months KPI"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "mobileNoOrMail":
             MessageLookupByLibrary.simpleMessage("Mobile No. or Email"),
+        "mobileNumber": MessageLookupByLibrary.simpleMessage("Mobile Number"),
         "nameIsRequired":
             MessageLookupByLibrary.simpleMessage("Name is required"),
         "nameMustHasOnlyLetters":
@@ -93,6 +101,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "passIsRequired":
             MessageLookupByLibrary.simpleMessage("Password is required"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "passwordIsResetSuccessfullyLoginAgain":
+            MessageLookupByLibrary.simpleMessage(
+                "Password is reset successfully, Please login again"),
         "passwordMustBeTheSame":
             MessageLookupByLibrary.simpleMessage("Password must be the same"),
         "paymentMethod": MessageLookupByLibrary.simpleMessage("Payment Method"),
@@ -109,6 +120,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please write your phone or email address in order to login into your account"),
         "pleaseWriteYourPhoneOrmail": MessageLookupByLibrary.simpleMessage(
             "Please write your phone or email address in order to login into your account"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "profileIsUpdated": MessageLookupByLibrary.simpleMessage(
+            "Profile is updated successfully"),
         "resetPassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
         "respondTime": MessageLookupByLibrary.simpleMessage("Respond time"),
         "searchByOrderNo":
@@ -118,6 +132,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "shippingFees": MessageLookupByLibrary.simpleMessage("Shipping Fees"),
         "status": MessageLookupByLibrary.simpleMessage("Status"),
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
+        "successfullyLoggedIn":
+            MessageLookupByLibrary.simpleMessage("Successfully Logged in"),
+        "successfullyLogout":
+            MessageLookupByLibrary.simpleMessage("Successfully Logged out"),
         "tellUsYourSituation":
             MessageLookupByLibrary.simpleMessage("Tell Us Your Situation"),
         "thankUForDeliveringOrder": MessageLookupByLibrary.simpleMessage(
@@ -125,6 +143,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "theForgetCodeIsSent": MessageLookupByLibrary.simpleMessage(
             "The forget code is sent to your email"),
         "total": MessageLookupByLibrary.simpleMessage("Total"),
+        "update": MessageLookupByLibrary.simpleMessage("Update"),
         "weHaveSentEmailCheckItToResetPass": MessageLookupByLibrary.simpleMessage(
             "We\'ve been sent an email to the mentioned email address in your inbox please check it in order to reset your password"),
         "welcomeToDeliveryApp":

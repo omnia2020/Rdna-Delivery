@@ -350,6 +350,16 @@ class AppLocalizations {
     );
   }
 
+  /// `Password is reset successfully, Please login again`
+  String get passwordIsResetSuccessfullyLoginAgain {
+    return Intl.message(
+      'Password is reset successfully, Please login again',
+      name: 'passwordIsResetSuccessfullyLoginAgain',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Email`
   String get email {
     return Intl.message(
@@ -515,6 +525,16 @@ class AppLocalizations {
     return Intl.message(
       'Orders List',
       name: 'ordersList',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
       desc: '',
       args: [],
     );
@@ -875,6 +895,106 @@ class AppLocalizations {
     return Intl.message(
       'Submit',
       name: 'submit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Successfully Logged in`
+  String get successfullyLoggedIn {
+    return Intl.message(
+      'Successfully Logged in',
+      name: 'successfullyLoggedIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Account Settings`
+  String get accountSettings {
+    return Intl.message(
+      'Account Settings',
+      name: 'accountSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change your account settings easily: Default address, change password, and choose payment methods.`
+  String get changeAccountSettingEasily {
+    return Intl.message(
+      'Change your account settings easily: Default address, change password, and choose payment methods.',
+      name: 'changeAccountSettingEasily',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Language`
+  String get language {
+    return Intl.message(
+      'Language',
+      name: 'language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout`
+  String get logout {
+    return Intl.message(
+      'Logout',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Successfully Logged out`
+  String get successfullyLogout {
+    return Intl.message(
+      'Successfully Logged out',
+      name: 'successfullyLogout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Update`
+  String get update {
+    return Intl.message(
+      'Update',
+      name: 'update',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile is updated successfully`
+  String get profileIsUpdated {
+    return Intl.message(
+      'Profile is updated successfully',
+      name: 'profileIsUpdated',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Name`
+  String get fullName {
+    return Intl.message(
+      'Full Name',
+      name: 'fullName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mobile Number`
+  String get mobileNumber {
+    return Intl.message(
+      'Mobile Number',
+      name: 'mobileNumber',
       desc: '',
       args: [],
     );

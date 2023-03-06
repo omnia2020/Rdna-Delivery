@@ -1,5 +1,6 @@
 import 'package:auto_route/annotations.dart';
 import 'package:auto_route/empty_router_widgets.dart';
+import 'package:rdna_delivery/src/features/account_setting/pages/pages.dart';
 import 'package:rdna_delivery/src/features/authentication/login/presentation/pages/pages.dart';
 import 'package:rdna_delivery/src/features/authentication/reset-password/presentation/pages/pages.dart';
 import 'package:rdna_delivery/src/features/dashboard/presentation/pages/pages.dart';
@@ -8,6 +9,7 @@ import 'package:rdna_delivery/src/features/notifications/presentation/pages/page
 import 'package:rdna_delivery/src/features/order-list/presentation/pages/pages.dart';
 import 'package:rdna_delivery/src/features/order_details/pages/pages.dart';
 import 'package:rdna_delivery/src/features/order_items/pages/pages.dart';
+import 'package:rdna_delivery/src/features/profile/presentation/pages/pages.dart';
 import 'package:rdna_delivery/src/features/report_order/pages/pages.dart';
 import 'package:rdna_delivery/src/features/splash_page/splash_page.dart';
 export 'package:auto_route/auto_route.dart';
@@ -53,6 +55,21 @@ export 'package:auto_route/auto_route.dart';
           page: NotificationsPage,
           path: 'notifications',
           name: 'NotificationsRoute',
+        ),
+        AutoRoute<void>(
+          page: EmptyRouterPage,
+          path: 'account-setting',
+          name: 'AccountSettingRouter',
+          children: [
+            AutoRoute(
+              path: '',
+              page: AccountSettingPage,
+            ),
+            AutoRoute(
+              path: 'profile',
+              page: ProfilePage,
+            ),
+          ],
         ),
       ],
     ),

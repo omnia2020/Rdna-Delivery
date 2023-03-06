@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
 import 'package:rdna_delivery/src/core/helpers/assets_helper.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/widgets/widgets.dart';
 
@@ -17,7 +19,7 @@ class CheckInboxPage extends StatefulWidget {
 class _CheckInboxPageState extends State<CheckInboxPage> {
   _navigationTimer() async {
     Timer(const Duration(seconds: 3), () async {
-    //  context.router.popAndPush(const ResetPasswordRoute());
+      context.router.popAndPush(const ResetPasswordRoute());
     });
   }
 

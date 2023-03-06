@@ -1,9 +1,10 @@
+import 'package:rdna_delivery/src/core/constants/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class _SessionManager {
-  final String loginStatus = 'status';
   final String token = 'token';
   final String deviceToken = 'device-token';
+  final String activeStatus = 'active-status';
 
   Future<void> setToken({String? tokenn}) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -29,16 +30,16 @@ class _SessionManager {
     return tokenn;
   }
 
-  Future<void> setLoggedStatus({bool? status}) async {
+  Future<void> setAciveStatus({String? status}) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.setBool(loginStatus, status!);
+    prefs.setString(activeStatus, status ?? AppConstants.userStatus[1].status!);
   }
 
-  Future<bool> getLoggedStatus() async {
+  Future<String> getActiveStatus() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
-    bool authStatus;
-    authStatus = pref.getBool(loginStatus) ?? false;
-    return authStatus;
+    String status;
+    status = pref.getString(activeStatus) ?? AppConstants.userStatus[1].status!;
+    return status;
   }
 }
 

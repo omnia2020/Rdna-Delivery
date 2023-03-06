@@ -150,6 +150,11 @@ class AppStyles {
         fontWeight: FontWeight.w400,
         color: AppColors.onBoardingTitleColor,
       );
+  static TextStyle get title18MBold => TextStyle(
+        fontSize: 18.sp,
+        fontWeight: FontWeight.bold,
+        color: AppColors.onBoardingTitleColor,
+      );
   static TextStyle get title12Bold => TextStyle(
         fontSize: 12.sp,
         fontWeight: FontWeight.bold,

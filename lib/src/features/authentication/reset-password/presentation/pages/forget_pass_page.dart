@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
 import 'package:rdna_delivery/src/core/helpers/assets_helper.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/validators/form_validator.dart';
+import 'package:rdna_delivery/src/core/widgets/app_toast.dart';
 import 'package:rdna_delivery/src/core/widgets/widgets.dart';
 import 'package:rdna_delivery/src/features/authentication/login/widgets/widgets.dart';
+import 'package:rdna_delivery/src/features/authentication/providers/auth_provider.dart';
 
 class ForgetPasswordPage extends StatefulWidget {
   const ForgetPasswordPage({super.key});
@@ -69,15 +74,28 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                         FormValidator.emailValidator(email!, l10n),
                   ),
                   250.verticalSpace,
-                  CustomButton(
-                    loading: false,
-                    onPressed: () async {},
-                    title: l10n.resetPassword,
-                    titleStyle: AppStyles.title16Medium,
-                    backgroundColor: AppColors.yellowColor,
-                    isDisabled: false,
-                    width: double.infinity,
-                  ),
+                  Consumer<AuthProvider>(
+                    builder: (_, state, __) {
+                      return CustomButton(
+                        loading: state.showLoading,
+                        onPressed: () async {
+                          if (_key.currentState!.validate()) {
+                            bool status =
+                                await state.forgetPassword(email: email.text);
+                            if (status) {
+                              AppToast.successToast(l10n.theForgetCodeIsSent);
+                              context.router.replace(const CheckInboxRoute());
+                            }
+                          }
+                        },
+                        title: l10n.resetPassword,
+                        titleStyle: AppStyles.title16Medium,
+                        backgroundColor: AppColors.yellowColor,
+                        isDisabled: false,
+                        width: double.infinity,
+                      );
+                    },
+                  )
                 ],
               ),
             ),

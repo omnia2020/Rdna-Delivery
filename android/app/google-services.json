@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "318952105091",
+    "project_id": "rdna-9416d",
+    "storage_bucket": "rdna-9416d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318952105091:android:7223e6b3fa22a6d982e7b6",
+        "android_client_info": {
+          "package_name": "com.rdnastore.deliveryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318952105091-som52485gfoa0fms5n99pqdbj7544vbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJsgAhIc6qIJ6TGvCu2NkToQZBeO44KKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318952105091-som52485gfoa0fms5n99pqdbj7544vbd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "318952105091-6ljfb2t5gppn858e0e5a4oca3q5edjqg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rdnaMob"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

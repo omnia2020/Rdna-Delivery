@@ -37,6 +37,9 @@
 
     "theForgetCodeIsSent":"تم ارسال الكود الى بريدك الالكتروني",
 
+    "passwordIsResetSuccessfullyLoginAgain":"تم إعادة تعيين كلمة المرور بنجاح ، يرجى تسجيل الدخول مرة أخرى",
+
+
     "email":"البريد الابكتروني",
 
     "welcomeToDeliveryApp":"مرحبا بك في تطبيق التوصيل",
@@ -58,6 +61,8 @@
     "notifications":"الاشعارات",
     "dashboard":"لوحة التحكم",
     "ordersList":"الطلبات",
+    "profile":"الملف الشخصي",
+
 
     "alert":"تنبيه",
     "doYouWantToExitTheApp":"هل تريد اغلاق التطبيق؟",
@@ -100,7 +105,24 @@
     "pleaseTellUsMoreInfoAboutSituation":"يرجى إخبارنا بمزيد من المعلومات بخصوص وضعك الحالي مع العميل",
     "whatIsHappened":"ماذا حدث",
     "tellUsYourSituation":"أخبرنا بموقفك",
-    "submit":"تقديم"
+    "submit":"تقديم",
+
+    "successfullyLoggedIn":"تم تسجيل الدخول بنجاح",
+
+    "accountSettings":"إعدادات الحساب",
+    "changeAccountSettingEasily":"قم بتغيير إعدادات حسابك بسهولة",
+    "language":"اللغة",
+    "logout":"تسجيل الخروج",
+
+    "successfullyLogout":"تم تسجيل الخروج بنجاح",
+
+    "update":"تعديل",
+
+    "profileIsUpdated":"تم تعديل الملف الشخصي بنجاح",
+
+    "fullName":"الاسم بالكامل",
+    "mobileNumber":"رقم الهاتف"
+
 
 
 }
