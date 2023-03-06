@@ -920,10 +920,10 @@ class AppLocalizations {
     );
   }
 
-  /// `Change your account settings easily: Default address, change password, and choose payment methods.`
+  /// `Change your account settings easily`
   String get changeAccountSettingEasily {
     return Intl.message(
-      'Change your account settings easily: Default address, change password, and choose payment methods.',
+      'Change your account settings easily',
       name: 'changeAccountSettingEasily',
       desc: '',
       args: [],

@@ -57,7 +57,7 @@ class _DashboardPageState extends State<DashboardPage> {
             curve: Curves.linear,
             key: bottomNavigationBarKey,
             selectedIndex: tabsRouter.activeIndex,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             showElevation: true,
             onItemSelected: (index) {
               tabsRouter.setActiveIndex(index);

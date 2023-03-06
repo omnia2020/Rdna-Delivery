@@ -32,7 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("Cash On Delivery"),
         "changeAccountSettingEasily": MessageLookupByLibrary.simpleMessage(
-            "Change your account settings easily: Default address, change password, and choose payment methods."),
+            "Change your account settings easily"),
         "checkUrInbox":
             MessageLookupByLibrary.simpleMessage("Check your inbox!"),
         "chooseTheMethodOfPayment": MessageLookupByLibrary.simpleMessage(
