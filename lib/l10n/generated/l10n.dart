@@ -1019,6 +1019,46 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Confirm Receiving Order`
+  String get confirmReceivingOrder {
+    return Intl.message(
+      'Confirm Receiving Order',
+      name: 'confirmReceivingOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thank you for receiving the order`
+  String get thankUForReceivingOrder {
+    return Intl.message(
+      'Thank you for receiving the order',
+      name: 'thankUForReceivingOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thank You For Reporting, We Will Review Your Feedback And Will Get Back To You Soon`
+  String get thankUForReporting {
+    return Intl.message(
+      'Thank You For Reporting, We Will Review Your Feedback And Will Get Back To You Soon',
+      name: 'thankUForReporting',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Received`
+  String get received {
+    return Intl.message(
+      'Received',
+      name: 'received',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

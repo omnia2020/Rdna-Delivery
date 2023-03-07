@@ -12,6 +12,8 @@ class AppColors {
   static const Color primaryColor = Color(0xff1F150F);
 
   static const Color yellowColor = Color(0xffFFCD00);
+  static const Color title2Color = Color(0xff303030);
+
   static const Color inActiveColor = Color(0xffC1C1C1);
   static const Color contentBlackColor = Color(0xff2C2C2C);
   static const Color onBoardingTitleColor = Color(0xff121212);

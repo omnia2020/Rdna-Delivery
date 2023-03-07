@@ -1,5 +1,4 @@
 class DeliveryOrdersModel {
-
   DeliveryOrdersModel.fromJson(Map<String, dynamic> json) {
     status = json['status'];
     message = json['message'];
@@ -23,7 +22,6 @@ class DeliveryOrdersModel {
 }
 
 class Data {
-
   Data.fromJson(Map<String, dynamic> json) {
     if (json['data'] != null) {
       ordersData = <OrdersData>[];
@@ -67,7 +65,6 @@ class Data {
 }
 
 class OrdersData {
-
   OrdersData.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     uniqueId = json['unique_id'];
@@ -82,26 +79,33 @@ class OrdersData {
     deliveryManId = json['delivery_man_id'];
     deliveryToAddress = json['delivery_to_address'];
     deliveryToCity = json['delivery_to_city'];
+    pickedByDeliveryAt = json['picked_by_delivery_at'];
+    deliveredReportAt = json['delivered_report_at'];
+    deliveredReportNote = json['delivered_report_note'];
   }
 
-  OrdersData(
-      {this.id,
-      this.uniqueId,
-      this.total,
-      this.totalAfterDiscount,
-      this.productsCount,
-      this.subcategoriesCount,
-      this.checkoutAt,
-      this.confirmedAt,
-      this.pickedAt,
-      this.fulfillmentId,
-      this.deliveryManId,
-      this.deliveryToAddress,
-      this.deliveryToCity});
+  OrdersData({
+    this.id,
+    this.uniqueId,
+    this.total,
+    this.totalAfterDiscount,
+    this.productsCount,
+    this.subcategoriesCount,
+    this.checkoutAt,
+    this.confirmedAt,
+    this.pickedAt,
+    this.fulfillmentId,
+    this.deliveryManId,
+    this.deliveryToAddress,
+    this.deliveryToCity,
+    this.pickedByDeliveryAt,
+    this.deliveredReportAt,
+    this.deliveredReportNote,
+  });
   int? id;
   String? uniqueId;
-  int? total;
-  int? totalAfterDiscount;
+  num? total;
+  num? totalAfterDiscount;
   int? productsCount;
   int? subcategoriesCount;
   String? checkoutAt;
@@ -111,6 +115,9 @@ class OrdersData {
   int? deliveryManId;
   String? deliveryToAddress;
   String? deliveryToCity;
+  String? pickedByDeliveryAt;
+  String? deliveredReportAt;
+  String? deliveredReportNote;
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
@@ -127,6 +134,9 @@ class OrdersData {
     data['delivery_man_id'] = this.deliveryManId;
     data['delivery_to_address'] = this.deliveryToAddress;
     data['delivery_to_city'] = this.deliveryToCity;
+    data['picked_by_delivery_at'] = this.pickedByDeliveryAt;
+    data['delivered_report_at'] = this.deliveredReportAt;
+    data['delivered_report_note'] = this.deliveredReportNote;
     return data;
   }
 }

@@ -38,15 +38,12 @@ class NotificationProvider extends ChangeNotifier {
   int get currentPage => _currentPage;
   set currentPage(int currentPage) {
     _currentPage = currentPage;
-    //  notifyListeners();
   }
-
   int lastPage = 0;
   bool _loadMore = true;
   bool get loadMore => _loadMore;
   set loadMore(bool loadMore) {
     _loadMore = loadMore;
-    //notifyListeners();
   }
 
   loadMoreNotifications() async {

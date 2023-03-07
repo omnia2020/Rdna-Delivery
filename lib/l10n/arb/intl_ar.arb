@@ -125,8 +125,15 @@
 
     
     "noDataFound":"لم يتم العثور علي أي بيانات",
-    "check":"تحقق"
+    "check":"تحقق",
 
+    "confirmReceivingOrder":"تأكيد استلام الطلب",
+
+    "thankUForReceivingOrder":"شكرا لك لاستلامك الطلب",
+
+    "thankUForReporting":"شكرًا لك على الإبلاغ ، سنراجع ملاحظاتك وسنعاود الاتصال بك قريبًا",
+
+    "received":"تم استلامه"
 
 
 
