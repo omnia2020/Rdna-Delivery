@@ -33,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("الدفع عند الاستلام"),
         "changeAccountSettingEasily": MessageLookupByLibrary.simpleMessage(
             "قم بتغيير إعدادات حسابك بسهولة"),
+        "check": MessageLookupByLibrary.simpleMessage("تحقق"),
         "checkUrInbox": MessageLookupByLibrary.simpleMessage(
             "تحقق من الصندوق الوارد الخاص ببريدك الالكتروني"),
         "chooseTheMethodOfPayment":
@@ -88,6 +89,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameMustHasOnlyLetters": MessageLookupByLibrary.simpleMessage(
             "يجب ان يحتوي الاسم علي حروف فقط"),
         "no": MessageLookupByLibrary.simpleMessage("لا"),
+        "noDataFound":
+            MessageLookupByLibrary.simpleMessage("لم يتم العثور علي أي بيانات"),
         "noThereIsAnIssueWithOrder":
             MessageLookupByLibrary.simpleMessage("لا، توجد مشكلة في الطلب"),
         "note": MessageLookupByLibrary.simpleMessage("ملاحظة"),

@@ -33,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Cash On Delivery"),
         "changeAccountSettingEasily": MessageLookupByLibrary.simpleMessage(
             "Change your account settings easily"),
+        "check": MessageLookupByLibrary.simpleMessage("Check"),
         "checkUrInbox":
             MessageLookupByLibrary.simpleMessage("Check your inbox!"),
         "chooseTheMethodOfPayment": MessageLookupByLibrary.simpleMessage(
@@ -86,6 +87,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameMustHasOnlyLetters":
             MessageLookupByLibrary.simpleMessage("Name must has only letters"),
         "no": MessageLookupByLibrary.simpleMessage("No"),
+        "noDataFound": MessageLookupByLibrary.simpleMessage("No Data Found"),
         "noThereIsAnIssueWithOrder": MessageLookupByLibrary.simpleMessage(
             "No, There Is An Issue With Order"),
         "note": MessageLookupByLibrary.simpleMessage("Note"),

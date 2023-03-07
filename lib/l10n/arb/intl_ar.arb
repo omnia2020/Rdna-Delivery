@@ -121,7 +121,12 @@
     "profileIsUpdated":"تم تعديل الملف الشخصي بنجاح",
 
     "fullName":"الاسم بالكامل",
-    "mobileNumber":"رقم الهاتف"
+    "mobileNumber":"رقم الهاتف",
+
+    
+    "noDataFound":"لم يتم العثور علي أي بيانات",
+    "check":"تحقق"
+
 
 
 

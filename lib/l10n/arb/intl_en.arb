@@ -120,7 +120,11 @@
     "profileIsUpdated":"Profile is updated successfully",
 
     "fullName":"Full Name",
-    "mobileNumber":"Mobile Number"
+    "mobileNumber":"Mobile Number",
+    
+    "noDataFound":"No Data Found",
+    "check":"Check"
+
 
 
     
