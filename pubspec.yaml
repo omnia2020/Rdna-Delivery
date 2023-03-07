@@ -124,28 +124,28 @@ flutter_intl:
 
 flutter_icons:
   #android: "launcher_icon"
-  image_path: "assets/logo/rdna-logo.png"
+  image_path: "assets/logo/rdna-logo.jpeg"
   min_sdk_android: 21 
   
   web:
     generate: true
-    image_path_android: "assets/logo/rdna-logo.png"
+    image_path_android: "assets/logo/rdna-logo.jpeg"
     background_color: "#FFCD00"
     theme_color: "#FFCD00"
   ios:
     generate: true
-    image_path_ios: "assets/logo/rdna-logo.png"
+    image_path_ios: "assets/logo/rdna-logo.jpeg"
     background_color: "#FFCD00"
     theme_color: "#FFCD00"
 
   android:
     generate: true
-    image_path: "assets/logo/rdna-logo.png"
+    image_path: "assets/logo/rdna-logo.jpeg"
     background_color: "#FFCD00"
     theme_color: "#FFCD00"
     
   windows:
     generate: true
-    image_path: "assets/logo/rdna-logo.png"
+    image_path: "assets/logo/rdna-logo.jpeg"
     icon_size: 48 # min:48, max:256, default: 48
   
