@@ -27,9 +27,10 @@ class ItemsTile extends StatelessWidget {
               width: 39.w,
               height: 39.w,
               decoration: BoxDecoration(
-                color: const Color(0xffF2F2F2),
-                borderRadius: BorderRadius.circular(12.r),
-              ),
+                  color: const Color(0xffF2F2F2),
+                  borderRadius: BorderRadius.circular(12.r),
+                  image: DecorationImage(
+                      image: NetworkImage(image), fit: BoxFit.cover)),
             ),
             16.horizontalSpace,
             Text(

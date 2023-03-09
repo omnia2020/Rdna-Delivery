@@ -29,7 +29,6 @@ class DeliveryOrdersProvider extends ChangeNotifier {
     _ordersData = [];
     try {
       _showLoading = true;
-      notifyListeners();
       _deliveryOrdersModel = await DeliveryOrdersApi().listAllDeliveryOrders(1);
       notifyListeners();
       _ordersData?.addAll(_deliveryOrdersModel!.data!.ordersData!);
@@ -61,6 +60,23 @@ class DeliveryOrdersProvider extends ChangeNotifier {
       }
     } catch (e) {
       loadMore = false;
+      AppToast.errorToast(e.toString());
+    }
+  }
+
+  SingleOrderDetails? _singleOrderDetails;
+  SingleOrderDetails? get singleOrderDetails => _singleOrderDetails;
+
+  showOrderDetails(int id) async {
+    try {
+      _showLoading = true;
+      _singleOrderDetails = await DeliveryOrdersApi().showOrderDetails(id);
+      notifyListeners();
+      _showLoading = false;
+      notifyListeners();
+    } catch (e) {
+      _showLoading = false;
+      notifyListeners();
       AppToast.errorToast(e.toString());
     }
   }

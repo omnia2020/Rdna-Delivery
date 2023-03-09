@@ -93,6 +93,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "no": MessageLookupByLibrary.simpleMessage("لا"),
         "noDataFound":
             MessageLookupByLibrary.simpleMessage("لم يتم العثور علي أي بيانات"),
+        "noNotificationFound":
+            MessageLookupByLibrary.simpleMessage("لم يتم العثور علي اشعارات"),
         "noThereIsAnIssueWithOrder":
             MessageLookupByLibrary.simpleMessage("لا، توجد مشكلة في الطلب"),
         "note": MessageLookupByLibrary.simpleMessage("ملاحظة"),

@@ -90,6 +90,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Name must has only letters"),
         "no": MessageLookupByLibrary.simpleMessage("No"),
         "noDataFound": MessageLookupByLibrary.simpleMessage("No Data Found"),
+        "noNotificationFound":
+            MessageLookupByLibrary.simpleMessage("No Notifications found"),
         "noThereIsAnIssueWithOrder": MessageLookupByLibrary.simpleMessage(
             "No, There Is An Issue With Order"),
         "note": MessageLookupByLibrary.simpleMessage("Note"),

@@ -8,11 +8,26 @@ class DeliveryOrdersApi {
   Future<DeliveryOrdersModel> listAllDeliveryOrders(int page) async {
     try {
       final response =
-          await DioClient().dio.get('/assigned/delivery/order/page=$page',
+          await DioClient().dio.get('/assigned/delivery/order?page=$page',
               options: Options(headers: {
                 HttpHeaders.contentTypeHeader: 'application/json',
               }));
       return DeliveryOrdersModel.fromJson(response.data);
+    } on DioError catch (err) {
+      throw err.response?.data['message'];
+    } catch (e) {
+      if (kDebugMode) print(e);
+      throw e.toString();
+    }
+  }
+
+  Future<SingleOrderDetails> showOrderDetails(int id) async {
+    try {
+      final response = await DioClient().dio.get('/assigned/delivery/order/$id',
+          options: Options(headers: {
+            HttpHeaders.contentTypeHeader: 'application/json',
+          }));
+      return SingleOrderDetails.fromJson(response.data);
     } on DioError catch (err) {
       throw err.response?.data['message'];
     } catch (e) {

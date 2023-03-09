@@ -122,9 +122,13 @@ class AppRouter extends _i14.RootStackRouter {
       );
     },
     OrderDetailsRoute.name: (routeData) {
+      final args = routeData.argsAs<OrderDetailsRouteArgs>();
       return _i14.AdaptivePage<dynamic>(
         routeData: routeData,
-        child: const _i10.OrderDetailsPage(),
+        child: _i10.OrderDetailsPage(
+          key: args.key,
+          id: args.id,
+        ),
       );
     },
     OrderItemsRoute.name: (routeData) {
@@ -402,14 +406,36 @@ class OrderListRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i10.OrderDetailsPage]
-class OrderDetailsRoute extends _i14.PageRouteInfo<void> {
-  const OrderDetailsRoute()
-      : super(
+class OrderDetailsRoute extends _i14.PageRouteInfo<OrderDetailsRouteArgs> {
+  OrderDetailsRoute({
+    _i15.Key? key,
+    required int id,
+  }) : super(
           OrderDetailsRoute.name,
           path: 'order-details',
+          args: OrderDetailsRouteArgs(
+            key: key,
+            id: id,
+          ),
         );
 
   static const String name = 'OrderDetailsRoute';
+}
+
+class OrderDetailsRouteArgs {
+  const OrderDetailsRouteArgs({
+    this.key,
+    required this.id,
+  });
+
+  final _i15.Key? key;
+
+  final int id;
+
+  @override
+  String toString() {
+    return 'OrderDetailsRouteArgs{key: $key, id: $id}';
+  }
 }
 
 /// generated route for

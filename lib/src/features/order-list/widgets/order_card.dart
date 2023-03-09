@@ -7,6 +7,7 @@ import 'package:rdna_delivery/src/core/routes/app_route.dart';
 import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:badges/badges.dart' as badges;
+import 'package:rdna_delivery/src/core/widgets/app_toast.dart';
 import 'package:rdna_delivery/src/features/order-list/models/models.dart';
 
 class OrderCard extends StatelessWidget {
@@ -21,7 +22,11 @@ class OrderCard extends StatelessWidget {
     final l10n = context.l10n;
     return InkWell(
       onTap: () {
-        context.router.push(const OrderDetailsRoute());
+        if (orderData?.deliveredAt == null) {
+          context.router.push(OrderDetailsRoute(id: orderData!.id!));
+        } else {
+          AppToast.infoToast('This order is already delivered');
+        }
       },
       borderRadius: BorderRadius.circular(8.r),
       child: badges.Badge(

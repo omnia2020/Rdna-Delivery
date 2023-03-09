@@ -17,6 +17,7 @@ class NotificationProvider extends ChangeNotifier {
   List<NotificationData>? get notificationData => _notificationData;
 
   listAllNotifications() async {
+    _notificationData = [];
     try {
       _loading = true;
       notifyListeners();
@@ -39,6 +40,7 @@ class NotificationProvider extends ChangeNotifier {
   set currentPage(int currentPage) {
     _currentPage = currentPage;
   }
+
   int lastPage = 0;
   bool _loadMore = true;
   bool get loadMore => _loadMore;
@@ -85,8 +87,6 @@ class NotificationProvider extends ChangeNotifier {
       _notificationModel = await NotificationApi().readAllNotifications();
       _loading = false;
       notifyListeners();
-      _notificationData?.addAll(_notificationModel!.data!.notificationData!);
-      notifyListeners();
       countUnReadNotifications();
       notifyListeners();
     } catch (e) {
@@ -102,6 +102,6 @@ class NotificationProvider extends ChangeNotifier {
     loadMore = true;
     currentPage = 1;
     lastPage = 1;
-    listAllNotifications();
+    await listAllNotifications();
   }
 }

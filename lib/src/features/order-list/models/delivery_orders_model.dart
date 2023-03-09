@@ -77,6 +77,7 @@ class OrdersData {
     pickedAt = json['picked_at'];
     fulfillmentId = json['fulfillment_id'];
     deliveryManId = json['delivery_man_id'];
+    deliveredAt = json['delivered_at'];
     deliveryToAddress = json['delivery_to_address'];
     deliveryToCity = json['delivery_to_city'];
     pickedByDeliveryAt = json['picked_by_delivery_at'];
@@ -96,6 +97,7 @@ class OrdersData {
     this.pickedAt,
     this.fulfillmentId,
     this.deliveryManId,
+    this.deliveredAt,
     this.deliveryToAddress,
     this.deliveryToCity,
     this.pickedByDeliveryAt,
@@ -113,6 +115,7 @@ class OrdersData {
   String? pickedAt;
   int? fulfillmentId;
   int? deliveryManId;
+  String? deliveredAt;
   String? deliveryToAddress;
   String? deliveryToCity;
   String? pickedByDeliveryAt;
@@ -132,6 +135,7 @@ class OrdersData {
     data['picked_at'] = this.pickedAt;
     data['fulfillment_id'] = this.fulfillmentId;
     data['delivery_man_id'] = this.deliveryManId;
+    data['delivered_at'] = this.deliveredAt;
     data['delivery_to_address'] = this.deliveryToAddress;
     data['delivery_to_city'] = this.deliveryToCity;
     data['picked_by_delivery_at'] = this.pickedByDeliveryAt;

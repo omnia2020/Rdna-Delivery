@@ -7,7 +7,6 @@ import 'package:rdna_delivery/src/core/widgets/widgets.dart';
 import 'package:rdna_delivery/src/features/notifications/presentation/providers/notification_provider.dart';
 import 'package:rdna_delivery/src/features/notifications/widgets/widgets.dart';
 
-
 class NotificationsPage extends StatefulWidget {
   const NotificationsPage({super.key});
 
@@ -65,7 +64,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
                   child: LoadingProgrss(),
                 );
               } else {
-                if (state.notificationModel != null) {
+                if (state.notificationData!.isNotEmpty) {
                   return SingleChildScrollView(
                     controller: scrollController,
                     physics: const AlwaysScrollableScrollPhysics(),
@@ -102,7 +101,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
                 } else {
                   return Center(
                     child: Text(
-                      l10n.noDataFound,
+                      l10n.noNotificationFound,
                       style: AppStyles.redNote14pxBold,
                     ),
                   );

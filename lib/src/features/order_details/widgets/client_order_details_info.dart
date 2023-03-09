@@ -67,9 +67,11 @@ class _ClientOrderDetailsInfoState extends State<ClientOrderDetailsInfo> {
               ),
             ],
           ),
-          24.verticalSpace,
-          TitleWidget(title: '${l10n.note}'),
-          16.verticalSpace,
+          widget.note != '' ? 24.verticalSpace : 0.verticalSpace,
+          widget.note != ''
+              ? TitleWidget(title: '${l10n.note}')
+              : const SizedBox(),
+          widget.note != '' ? 16.verticalSpace : 0.verticalSpace,
           Text(
             '${widget.note}',
             style: AppStyles.content15pxRegular,

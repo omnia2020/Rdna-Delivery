@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/widgets/widgets.dart';
 import 'package:rdna_delivery/src/features/notifications/models/models.dart';
@@ -13,7 +15,20 @@ class NotificationTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        GetIt.instance<AppRouter>().pushAll(
+          [
+            Dashboard(
+              children: [
+                OrderListRouter(children: [
+                  const OrderListRoute(),
+                  OrderDetailsRoute(id: notificationData!.order!),
+                ]),
+              ],
+            ),
+          ],
+        );
+      },
       child: Container(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,

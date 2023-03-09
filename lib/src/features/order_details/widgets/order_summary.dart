@@ -22,20 +22,20 @@ class OrderSummary extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TitleWidget(title: '${l10n.orderSummary}'),
-          16.verticalSpace,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                '${l10n.shippingFees}:',
-                style: AppStyles.content15pxRegular,
-              ),
-              Text(
-                '$shippinFess ${l10n.egp}',
-                style: AppStyles.content15pxRegular,
-              ),
-            ],
-          ),
+          //  16.verticalSpace,
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //   children: [
+          //     Text(
+          //       '${l10n.shippingFees}:',
+          //       style: AppStyles.content15pxRegular,
+          //     ),
+          //     Text(
+          //       '$shippinFess ${l10n.egp}',
+          //       style: AppStyles.content15pxRegular,
+          //     ),
+          //   ],
+          // ),
           16.verticalSpace,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

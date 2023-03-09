@@ -1059,6 +1059,16 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `No Notifications found`
+  String get noNotificationFound {
+    return Intl.message(
+      'No Notifications found',
+      name: 'noNotificationFound',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

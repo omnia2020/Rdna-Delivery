@@ -1,13 +1,17 @@
+import 'package:badges/badges.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:provider/provider.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
 import 'package:rdna_delivery/src/core/helpers/assets_helper.dart';
 import 'package:rdna_delivery/src/core/routes/app_route.dart';
 import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/widgets/widgets.dart';
+import 'package:badges/badges.dart' as badges;
+import 'package:rdna_delivery/src/features/notifications/presentation/providers/notification_provider.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({Key? key}) : super(key: key);
@@ -102,13 +106,29 @@ class _DashboardPageState extends State<DashboardPage> {
               BottomNavyBarItem(
                 icon: tabsRouter.activeIndex == 2
                     ? SvgPicture.asset(
-                        AssetsHelper.activeNotificationIcon,
+                        AssetsHelper.notificationIcon,
                         color: AppColors.onBoardingTitleColor,
                       )
-                    : SvgPicture.asset(
-                        AssetsHelper.notificationIcon,
-                        color: AppColors.onBoardingTitleColor.withOpacity(0.5),
-                      ),
+                    : Consumer<NotificationProvider>(builder: (_, state, __) {
+                        return badges.Badge(
+                          badgeColor: AppColors.redColorNote,
+                          shape: BadgeShape.circle,
+                          badgeContent: Text(
+                            state.totalNotifications.toString(),
+                            style: AppStyles.white14Regular,
+                          ),
+                          child: tabsRouter.activeIndex == 2
+                              ? SvgPicture.asset(
+                                  AssetsHelper.activeNotificationIcon,
+                                  color: AppColors.onBoardingTitleColor,
+                                )
+                              : SvgPicture.asset(
+                                  AssetsHelper.notificationIcon,
+                                  color: AppColors.onBoardingTitleColor
+                                      .withOpacity(0.5),
+                                ),
+                        );
+                      }),
                 title: Text(
                   l10n.notifications,
                   style: AppStyles.title14Medium,

@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:rdna_delivery/src/core/helpers/assets_helper.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
-import 'package:rdna_delivery/src/features/order_details/sheets/sheets.dart';
 
 class PaymentTile extends StatelessWidget {
   const PaymentTile({super.key, required this.payment, required this.ifPaid});
@@ -14,19 +13,20 @@ class PaymentTile extends StatelessWidget {
     return Opacity(
       opacity: 0.5,
       child: ListTile(
-        onTap: !ifPaid
-            ? () {
-                showModalBottomSheet(
-                    context: context,
-                    isScrollControlled: true,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.r),
-                    ),
-                    builder: (_) {
-                      return const PaymentMethodSheet();
-                    });
-              }
-            : null,
+        onTap: null,
+        // onTap: !ifPaid
+        //     ? () {
+        //         showModalBottomSheet(
+        //             context: context,
+        //             isScrollControlled: true,
+        //             shape: RoundedRectangleBorder(
+        //               borderRadius: BorderRadius.circular(20.r),
+        //             ),
+        //             builder: (_) {
+        //               return const PaymentMethodSheet();
+        //             });
+        //       }
+        //     : null,
         title: Text(
           '$payment',
           style: AppStyles.lightBlack3030_16Medium,
