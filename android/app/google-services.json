@@ -7,12 +7,28 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:318952105091:android:9ef06814963ef4e582e7b6",
+        "mobilesdk_app_id": "1:318952105091:android:a0506814b77a984c82e7b6",
         "android_client_info": {
-          "package_name": "com.rdnastore.new.delivery"
+          "package_name": "com.rdnastore.newdelivery"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "318952105091-nuudc6rjju5r5m890t4ff80l0slrd0vb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rdnastore.newdelivery",
+            "certificate_hash": "b12f89f5389e8cf4b094793ffbb11eef950e1676"
+          }
+        },
+        {
+          "client_id": "318952105091-vmalvk483307hl76m8cep06oe1e87ecq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rdnastore.newdelivery",
+            "certificate_hash": "d461b07569e18a70a982aafdd8a0cd507a65170c"
+          }
+        },
         {
           "client_id": "318952105091-som52485gfoa0fms5n99pqdbj7544vbd.apps.googleusercontent.com",
           "client_type": 3

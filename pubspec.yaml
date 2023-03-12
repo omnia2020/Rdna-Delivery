@@ -1,6 +1,6 @@
 name: rdna_delivery
 description: Rdna Delivery Application .
-version: 1.0.0+1
+version: 4.24.0+1
 publish_to: none
 
 environment:

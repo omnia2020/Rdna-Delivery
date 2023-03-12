@@ -26,7 +26,9 @@ class _Firebase {
   getDeviceToken() async {
     _firebaseMessaging?.getToken().then((token) async {
       await sessionManager.setDeviceToken(tokenn: token);
+
       log(token!.toString());
+      log(token.length.toString());
     });
   }
 
