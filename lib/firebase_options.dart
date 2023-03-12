@@ -55,7 +55,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCJsgAhIc6qIJ6TGvCu2NkToQZBeO44KKk',
-    appId: '1:318952105091:android:7223e6b3fa22a6d982e7b6',
+    appId: '1:318952105091:android:9ef06814963ef4e582e7b6',
     messagingSenderId: '318952105091',
     projectId: 'rdna-9416d',
     storageBucket: 'rdna-9416d.appspot.com',
@@ -63,17 +63,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyB-3oS0-4NRRkuuFQG5afM3XFT7oemYj5E',
-    appId: '1:318952105091:ios:1155f448518209eb82e7b6',
+    appId: '1:318952105091:ios:94c442200a56d23582e7b6',
     messagingSenderId: '318952105091',
     projectId: 'rdna-9416d',
     storageBucket: 'rdna-9416d.appspot.com',
-    iosClientId: '318952105091-49j0adfk6cfeedj15fbgrha9oibirhaa.apps.googleusercontent.com',
-    iosBundleId: 'com.rdnastore.deliveryapp',
+    iosClientId: '318952105091-h1m9jrh63ivcu42b1bnocj9b2dbbgauc.apps.googleusercontent.com',
+    iosBundleId: 'com.rdnastore.new.delivery',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyB-3oS0-4NRRkuuFQG5afM3XFT7oemYj5E',
-    appId: '1:318952105091:ios:fbacb855fc24da6f82e7b6',
+    appId: '1:318952105091:ios:ca58c7f256c72c3382e7b6',
     messagingSenderId: '318952105091',
     projectId: 'rdna-9416d',
     storageBucket: 'rdna-9416d.appspot.com',
