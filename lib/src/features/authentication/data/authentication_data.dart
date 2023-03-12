@@ -21,6 +21,7 @@ class AuthenticationData {
           data: body,
           options: Options(followRedirects: false, headers: {
             HttpHeaders.contentTypeHeader: 'application/json',
+            // 'app':'delivery',
             'requiresToken': false,
           }));
       return AppUser.fromJson(response.data);

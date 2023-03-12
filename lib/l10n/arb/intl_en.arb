@@ -120,7 +120,21 @@
     "profileIsUpdated":"Profile is updated successfully",
 
     "fullName":"Full Name",
-    "mobileNumber":"Mobile Number"
+    "mobileNumber":"Mobile Number",
+    
+    "noDataFound":"No Data Found",
+    "check":"Check",
+
+    "confirmReceivingOrder":"Confirm Receiving Order",
+
+    "thankUForReceivingOrder":"Thank you for receiving the order",
+
+    "thankUForReporting":"Thank You For Reporting, We Will Review Your Feedback And Will Get Back To You Soon",
+
+    "received":"Received",
+
+    "noNotificationFound":"No Notifications found"
+
 
 
     

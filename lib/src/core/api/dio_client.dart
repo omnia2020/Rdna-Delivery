@@ -7,8 +7,8 @@ class DioClient {
       : dio = Dio(
           BaseOptions(
             baseUrl: AppConstants.apiBaseUrl,
-            connectTimeout: 5000,
-            receiveTimeout: 3000,
+            connectTimeout: 30000,
+            receiveTimeout: 30000,
             responseType: ResponseType.json,
             receiveDataWhenStatusError: true,
           ),

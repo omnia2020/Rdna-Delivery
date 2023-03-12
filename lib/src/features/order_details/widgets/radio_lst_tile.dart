@@ -32,6 +32,7 @@ class RadioLstTile extends StatelessWidget {
           title,
           style: AppStyles.contentExpansion16Regular,
         ),
+        toggleable: true,
         tileColor: AppColors.babyBlueColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.r),

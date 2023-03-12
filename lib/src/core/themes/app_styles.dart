@@ -14,6 +14,12 @@ class AppStyles {
         fontWeight: FontWeight.w400,
         color: AppColors.primaryColor,
       );
+
+  static TextStyle get primary14pxBold1F => TextStyle(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.bold,
+        color: AppColors.primaryColor,
+      );
   static TextStyle get primary18pxSemiBold => TextStyle(
         fontSize: 18.sp,
         fontWeight: FontWeight.w700,

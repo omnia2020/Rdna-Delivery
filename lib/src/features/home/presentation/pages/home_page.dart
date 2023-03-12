@@ -8,6 +8,7 @@ import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/widgets/widgets.dart';
 import 'package:rdna_delivery/src/features/authentication/providers/auth_provider.dart';
 import 'package:rdna_delivery/src/features/home/widgets/widgets.dart';
+import 'package:rdna_delivery/src/features/notifications/presentation/providers/notification_provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -33,6 +34,8 @@ class _HomePageState extends State<HomePage> {
         statusColor = AppColors.invisibleColor;
       });
     }
+    await Provider.of<NotificationProvider>(context, listen: false)
+        .listAllNotifications();
   }
 
   @override

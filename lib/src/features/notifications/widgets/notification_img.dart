@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:rdna_delivery/src/core/helpers/assets_helper.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 
 class NotificationImg extends StatelessWidget {
@@ -14,12 +14,8 @@ class NotificationImg extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.greyColorF5,
         borderRadius: BorderRadius.circular(6.r),
-        image: const DecorationImage(
-          image: AssetImage(
-            AssetsHelper.orderDummyImg,
-          ),
-        ),
       ),
+      child: SvgPicture.network(img, fit: BoxFit.cover),
     );
   }
 }

@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/features/order_details/widgets/widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ShippingAddressWidget extends StatelessWidget {
   const ShippingAddressWidget({super.key, required this.address});
@@ -31,7 +32,16 @@ class ShippingAddressWidget extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () async {
+              final url =
+                  'https://www.google.com/maps/search/${Uri.encodeFull(address!)}';
+              final u = Uri.parse(url);
+              if (await canLaunchUrl(u)) {
+                await launchUrl(u);
+              } else {
+                throw 'Could not launch $url';
+              }
+            },
             child: Row(
               children: [
                 Text(

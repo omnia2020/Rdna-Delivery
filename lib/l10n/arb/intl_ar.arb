@@ -121,8 +121,20 @@
     "profileIsUpdated":"تم تعديل الملف الشخصي بنجاح",
 
     "fullName":"الاسم بالكامل",
-    "mobileNumber":"رقم الهاتف"
+    "mobileNumber":"رقم الهاتف",
 
+    
+    "noDataFound":"لم يتم العثور علي أي بيانات",
+    "check":"تحقق",
 
+    "confirmReceivingOrder":"تأكيد استلام الطلب",
+
+    "thankUForReceivingOrder":"شكرا لك لاستلامك الطلب",
+
+    "thankUForReporting":"شكرًا لك على الإبلاغ ، سنراجع ملاحظاتك وسنعاود الاتصال بك قريبًا",
+
+    "received":"تم استلامه",
+
+    "noNotificationFound":"لم يتم العثور علي اشعارات"
 
 }

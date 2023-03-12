@@ -33,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("الدفع عند الاستلام"),
         "changeAccountSettingEasily": MessageLookupByLibrary.simpleMessage(
             "قم بتغيير إعدادات حسابك بسهولة"),
+        "check": MessageLookupByLibrary.simpleMessage("تحقق"),
         "checkUrInbox": MessageLookupByLibrary.simpleMessage(
             "تحقق من الصندوق الوارد الخاص ببريدك الالكتروني"),
         "chooseTheMethodOfPayment":
@@ -42,6 +43,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تأكيد توصيل الطلب"),
         "confirmNewPass":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور الجديدة"),
+        "confirmReceivingOrder":
+            MessageLookupByLibrary.simpleMessage("تأكيد استلام الطلب"),
         "currentMonth": MessageLookupByLibrary.simpleMessage("الشهر الحالي"),
         "currentOrders":
             MessageLookupByLibrary.simpleMessage("الطلبات الحالية"),
@@ -88,6 +91,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameMustHasOnlyLetters": MessageLookupByLibrary.simpleMessage(
             "يجب ان يحتوي الاسم علي حروف فقط"),
         "no": MessageLookupByLibrary.simpleMessage("لا"),
+        "noDataFound":
+            MessageLookupByLibrary.simpleMessage("لم يتم العثور علي أي بيانات"),
+        "noNotificationFound":
+            MessageLookupByLibrary.simpleMessage("لم يتم العثور علي اشعارات"),
         "noThereIsAnIssueWithOrder":
             MessageLookupByLibrary.simpleMessage("لا، توجد مشكلة في الطلب"),
         "note": MessageLookupByLibrary.simpleMessage("ملاحظة"),
@@ -126,6 +133,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "profileIsUpdated":
             MessageLookupByLibrary.simpleMessage("تم تعديل الملف الشخصي بنجاح"),
+        "received": MessageLookupByLibrary.simpleMessage("تم استلامه"),
         "resetPassword":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
         "respondTime": MessageLookupByLibrary.simpleMessage("وقت الاستجابة"),
@@ -144,6 +152,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("أخبرنا بموقفك"),
         "thankUForDeliveringOrder":
             MessageLookupByLibrary.simpleMessage("شكرا لك علي توصيل الطلب"),
+        "thankUForReceivingOrder":
+            MessageLookupByLibrary.simpleMessage("شكرا لك لاستلامك الطلب"),
+        "thankUForReporting": MessageLookupByLibrary.simpleMessage(
+            "شكرًا لك على الإبلاغ ، سنراجع ملاحظاتك وسنعاود الاتصال بك قريبًا"),
         "theForgetCodeIsSent": MessageLookupByLibrary.simpleMessage(
             "تم ارسال الكود الى بريدك الالكتروني"),
         "total": MessageLookupByLibrary.simpleMessage("الاجمالى"),

@@ -8,6 +8,8 @@ import 'package:rdna_delivery/l10n/generated/l10n.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/features/authentication/providers/auth_provider.dart';
+import 'package:rdna_delivery/src/features/notifications/presentation/providers/notification_provider.dart';
+import 'package:rdna_delivery/src/features/order-list/presentation/providers/delivery_orders_provider.dart';
 
 class App extends StatelessWidget {
   App({super.key});
@@ -18,6 +20,8 @@ class App extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => AuthProvider()),
+        ChangeNotifierProvider(create: (_) => DeliveryOrdersProvider()),
+        ChangeNotifierProvider(create: (_) => NotificationProvider()),
       ],
       child: AnnotatedRegion(
         value: SystemUiOverlayStyle.dark.copyWith(

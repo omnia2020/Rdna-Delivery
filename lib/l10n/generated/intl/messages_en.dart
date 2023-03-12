@@ -33,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Cash On Delivery"),
         "changeAccountSettingEasily": MessageLookupByLibrary.simpleMessage(
             "Change your account settings easily"),
+        "check": MessageLookupByLibrary.simpleMessage("Check"),
         "checkUrInbox":
             MessageLookupByLibrary.simpleMessage("Check your inbox!"),
         "chooseTheMethodOfPayment": MessageLookupByLibrary.simpleMessage(
@@ -42,6 +43,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Confirm Delivering Order"),
         "confirmNewPass":
             MessageLookupByLibrary.simpleMessage("Confirm new password"),
+        "confirmReceivingOrder":
+            MessageLookupByLibrary.simpleMessage("Confirm Receiving Order"),
         "currentMonth": MessageLookupByLibrary.simpleMessage("Current Month"),
         "currentOrders": MessageLookupByLibrary.simpleMessage("Current Orders"),
         "currentPass": MessageLookupByLibrary.simpleMessage("Current Password"),
@@ -86,6 +89,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameMustHasOnlyLetters":
             MessageLookupByLibrary.simpleMessage("Name must has only letters"),
         "no": MessageLookupByLibrary.simpleMessage("No"),
+        "noDataFound": MessageLookupByLibrary.simpleMessage("No Data Found"),
+        "noNotificationFound":
+            MessageLookupByLibrary.simpleMessage("No Notifications found"),
         "noThereIsAnIssueWithOrder": MessageLookupByLibrary.simpleMessage(
             "No, There Is An Issue With Order"),
         "note": MessageLookupByLibrary.simpleMessage("Note"),
@@ -123,6 +129,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "profileIsUpdated": MessageLookupByLibrary.simpleMessage(
             "Profile is updated successfully"),
+        "received": MessageLookupByLibrary.simpleMessage("Received"),
         "resetPassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
         "respondTime": MessageLookupByLibrary.simpleMessage("Respond time"),
         "searchByOrderNo":
@@ -140,6 +147,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Tell Us Your Situation"),
         "thankUForDeliveringOrder": MessageLookupByLibrary.simpleMessage(
             "Thank You For Delivering Order"),
+        "thankUForReceivingOrder": MessageLookupByLibrary.simpleMessage(
+            "Thank you for receiving the order"),
+        "thankUForReporting": MessageLookupByLibrary.simpleMessage(
+            "Thank You For Reporting, We Will Review Your Feedback And Will Get Back To You Soon"),
         "theForgetCodeIsSent": MessageLookupByLibrary.simpleMessage(
             "The forget code is sent to your email"),
         "total": MessageLookupByLibrary.simpleMessage("Total"),

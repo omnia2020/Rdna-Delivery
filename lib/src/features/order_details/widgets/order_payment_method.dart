@@ -9,6 +9,7 @@ import 'package:rdna_delivery/src/features/order_details/widgets/widgets.dart';
 class OrderPaymentMethod extends StatelessWidget {
   const OrderPaymentMethod({super.key, required this.ifPaid});
   final bool ifPaid;
+
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
@@ -19,7 +20,8 @@ class OrderPaymentMethod extends StatelessWidget {
         children: [
           TitleWidget(title: '${l10n.paymentMethod}'),
           16.verticalSpace,
-          PaymentTile(payment: 'Cash On Delivery', ifPaid: ifPaid),
+          PaymentTile(
+              payment: ifPaid ? 'Online' : 'Cash On Delivery', ifPaid: ifPaid),
           ifPaid ? 8.verticalSpace : const SizedBox(),
           ifPaid
               ? Row(
@@ -34,7 +36,6 @@ class OrderPaymentMethod extends StatelessWidget {
                 )
               : const SizedBox(),
           24.verticalSpace,
-          
         ],
       ),
     );
