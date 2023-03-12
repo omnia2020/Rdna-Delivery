@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-
+import 'package:get_it/get_it.dart';
+import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 
 class LocalNotificationService {
   LocalNotificationService._internal();
@@ -76,11 +77,18 @@ class LocalNotificationService {
       final payload = jsonDecode(notificationResponse.payload!);
       controllerPayload.sink.add(payload);
       if (payload['orderId'] != null) {
-        // GetIt.instance<AppRouter>().pushAll([
-        //   NotificationCenterRouter(children: [
-        //     OrderDetailsRouter(orderID: int.parse(payload['orderId'])),
-        //   ]),
-        // ]);
+        GetIt.instance<AppRouter>().pushAll(
+          [
+            Dashboard(
+              children: [
+                OrderListRouter(children: [
+                  const OrderListRoute(),
+                  OrderDetailsRoute(id: int.parse(payload['orderId'])),
+                ]),
+              ],
+            ),
+          ],
+        );
       }
     }
   }
