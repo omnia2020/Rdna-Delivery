@@ -1,9 +1,10 @@
 class SingleOrderDetails {
-
   SingleOrderDetails.fromJson(Map<String, dynamic> json) {
     status = json['status'];
     message = json['message'];
-    data = json['data'] != null ? new OrderDetailsInfo.fromJson(json['data']) : null;
+    data = json['data'] != null
+        ? new OrderDetailsInfo.fromJson(json['data'])
+        : null;
   }
 
   SingleOrderDetails({this.status, this.message, this.data});
@@ -23,7 +24,6 @@ class SingleOrderDetails {
 }
 
 class OrderDetailsInfo {
-
   OrderDetailsInfo.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     name = json['name'];
@@ -45,24 +45,33 @@ class OrderDetailsInfo {
         orderItems!.add(new OrderItems.fromJson(v));
       });
     }
+    pickedByDeliveryAt = json['picked_by_delivery_at'];
+    deliveredAt = json['delivered_at'];
+    deliveredReportAt = json['delivered_report_at'];
+    deliveredReportNote = json['delivered_report_note'];
   }
 
-  OrderDetailsInfo(
-      {this.id,
-      this.name,
-      this.email,
-      this.phone,
-      this.address,
-      this.home,
-      this.flat,
-      this.floor,
-      this.addressNotes,
-      this.paymentMethod,
-      this.total,
-      this.totalAfterDiscount,
-      this.subtotalPrice,
-      this.subtotalPriceAfterDiscount,
-      this.orderItems});
+  OrderDetailsInfo({
+    this.id,
+    this.name,
+    this.email,
+    this.phone,
+    this.address,
+    this.home,
+    this.flat,
+    this.floor,
+    this.addressNotes,
+    this.paymentMethod,
+    this.total,
+    this.totalAfterDiscount,
+    this.subtotalPrice,
+    this.subtotalPriceAfterDiscount,
+    this.orderItems,
+    this.pickedByDeliveryAt,
+    this.deliveredAt,
+    this.deliveredReportAt,
+    this.deliveredReportNote,
+  });
   int? id;
   String? name;
   String? email;
@@ -77,6 +86,10 @@ class OrderDetailsInfo {
   num? totalAfterDiscount;
   num? subtotalPrice;
   num? subtotalPriceAfterDiscount;
+  String? pickedByDeliveryAt;
+  String? deliveredAt;
+  String? deliveredReportAt;
+  String? deliveredReportNote;
   List<OrderItems>? orderItems;
 
   Map<String, dynamic> toJson() {
@@ -98,12 +111,15 @@ class OrderDetailsInfo {
     if (this.orderItems != null) {
       data['order_items'] = this.orderItems!.map((v) => v.toJson()).toList();
     }
+    data['picked_by_delivery_at'] = this.pickedByDeliveryAt;
+    data['delivered_at'] = this.deliveredAt;
+    data['delivered_report_at'] = this.deliveredReportAt;
+    data['delivered_report_note'] = this.deliveredReportNote;
     return data;
   }
 }
 
 class OrderItems {
-
   OrderItems.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'];
@@ -135,7 +151,6 @@ class OrderItems {
 }
 
 class Products {
-
   Products.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'];

@@ -45,6 +45,7 @@ class _OrderDetailsPageState extends State<OrderDetailsPage> {
         bottomNavigationBar: CustomBottomBar(
           height: 105.h,
           title: l10n.confirmDeliveringOrder,
+          disabled: state.singleOrderDetails?.data?.pickedByDeliveryAt == null,
           onPressed: () {
             showModalBottomSheet(
                 context: context,

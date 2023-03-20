@@ -30,6 +30,7 @@ class _SplashPageState extends State<SplashPage> {
 
   getToken() async {
     userToken = await sessionManager.getToken();
+    log(userToken);
   }
 
   initUser() async {

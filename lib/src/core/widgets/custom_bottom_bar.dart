@@ -11,12 +11,14 @@ class CustomBottomBar extends StatelessWidget {
     required this.loading,
     required this.height,
     this.widget,
+    this.disabled=false,
   });
   final String title;
   final Function() onPressed;
   final bool loading;
   final double height;
   final Widget? widget;
+  final bool? disabled;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -43,7 +45,7 @@ class CustomBottomBar extends StatelessWidget {
               title: title,
               titleStyle: AppStyles.title16Medium,
               backgroundColor: AppColors.yellowColor,
-              isDisabled: false,
+              isDisabled: disabled!,
               width: double.infinity,
               height: 56.h,
               onPressed: onPressed,

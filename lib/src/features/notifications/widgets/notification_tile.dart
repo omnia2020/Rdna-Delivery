@@ -62,7 +62,20 @@ class NotificationTile extends StatelessWidget {
                   backgroundColor: AppColors.yellowColor,
                   title: l10n.check,
                   titleStyle: AppStyles.title14Medium,
-                  onPressed: () {},
+                  onPressed: () {
+                    GetIt.instance<AppRouter>().pushAll(
+                      [
+                        Dashboard(
+                          children: [
+                            OrderListRouter(children: [
+                              const OrderListRoute(),
+                              OrderDetailsRoute(id: notificationData!.order!),
+                            ]),
+                          ],
+                        ),
+                      ],
+                    );
+                  },
                 ),
               ],
             ),
