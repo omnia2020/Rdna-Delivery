@@ -9,8 +9,8 @@ class NotificationImg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 74.w,
-      height: 74.w,
+      width: 50.w,
+      height: 50.w,
       decoration: BoxDecoration(
         color: AppColors.greyColorF5,
         borderRadius: BorderRadius.circular(6.r),

@@ -78,16 +78,19 @@ class NotificationData {
     readAt = json['read_at'];
     order = json['order'];
     assignedMe = json['assigned_me'];
+    createdAt = json['created_at'];
   }
 
-  NotificationData(
-      {this.id,
-      this.title,
-      this.description,
-      this.icon,
-      this.readAt,
-      this.order,
-      this.assignedMe});
+  NotificationData({
+    this.id,
+    this.title,
+    this.description,
+    this.icon,
+    this.readAt,
+    this.order,
+    this.assignedMe,
+    this.createdAt,
+  });
   int? id;
   String? title;
   String? description;
@@ -95,6 +98,7 @@ class NotificationData {
   String? readAt;
   int? order;
   bool? assignedMe;
+  String? createdAt;
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
@@ -105,6 +109,7 @@ class NotificationData {
     data['read_at'] = this.readAt;
     data['order'] = this.order;
     data['assigned_me'] = this.assignedMe;
+    data['created_at'] = this.createdAt;
     return data;
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get_it/get_it.dart';
+import 'package:intl/intl.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
 import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
@@ -39,16 +40,21 @@ class NotificationTile extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Text(
+                  'OrderNo. ${notificationData?.id}',
+                  style: AppStyles.primary14pxBold1F,
+                ),
+                2.verticalSpace,
                 SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.63,
+                  width: MediaQuery.of(context).size.width * 0.40,
                   child: Text(
-                    notificationData?.title ?? '',
+                    '${notificationData?.title ?? ''}',
                     style: AppStyles.primary14pxBold1F,
                   ),
                 ),
                 8.verticalSpace,
                 SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.63,
+                  //   width: MediaQuery.of(context).size.width * 0.63,
                   child: Text(
                     notificationData?.description ?? '',
                     style: AppStyles.title14Regular,
@@ -78,6 +84,13 @@ class NotificationTile extends StatelessWidget {
                   },
                 ),
               ],
+            ),
+            const Spacer(),
+            Text(
+              DateFormat.yMMMd().format(DateTime.parse(
+                  notificationData?.createdAt ??
+                      '2023-03-21T22:30:36.000000Z')),
+              style: AppStyles.primary14pxBold1F,
             ),
           ],
         ),

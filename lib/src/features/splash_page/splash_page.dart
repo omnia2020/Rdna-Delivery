@@ -34,18 +34,18 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   initUser() async {
-    await Provider.of<AuthProvider>(context, listen: false).showUserInfo();
+    try {
+      await Provider.of<AuthProvider>(context, listen: false).showUserInfo();
+    } catch (e) {
+      await Provider.of<AuthProvider>(context, listen: false)
+          .resetUserSession();
+      context.router.popAndPush(LoginRoute());
+    }
   }
 
   _navigationTimer() async {
     Timer(const Duration(seconds: 3), () async {
-      try {
-        await initUser();
-      } catch (e) {
-        await Provider.of<AuthProvider>(context, listen: false)
-            .resetUserSession();
-        context.router.popAndPush(LoginRoute());
-      }
+      await initUser();
       if (userToken != '') {
         log(userToken);
         context.router.popAndPush(const Dashboard());
