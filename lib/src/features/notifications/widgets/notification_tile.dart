@@ -41,7 +41,7 @@ class NotificationTile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'OrderNo. ${notificationData?.id}',
+                  'OrderNo. ${notificationData?.order}',
                   style: AppStyles.primary14pxBold1F,
                 ),
                 2.verticalSpace,
