@@ -6,6 +6,7 @@ import 'package:rdna_delivery/src/core/routes/app_route.dart';
 import 'package:rdna_delivery/src/core/routes/app_route.gr.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/widgets/app_toast.dart';
+import 'package:rdna_delivery/src/features/notifications/presentation/providers/notification_provider.dart';
 import 'package:rdna_delivery/src/features/order-list/presentation/providers/delivery_orders_provider.dart';
 import 'package:rdna_delivery/src/features/order_details/widgets/widgets.dart';
 
@@ -67,6 +68,9 @@ class _OrderStatusSheetState extends State<OrderStatusSheet> {
                             await Provider.of<DeliveryOrdersProvider>(context,
                                     listen: false)
                                 .listAllDeliveryOrders();
+                            await Provider.of<NotificationProvider>(context,
+                                    listen: false)
+                                .reset();
                             context.tabsRouter
                                 .stackRouterOfIndex(
                                     context.tabsRouter.activeIndex)

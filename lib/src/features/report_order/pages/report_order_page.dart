@@ -8,6 +8,7 @@ import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/validators/form_validator.dart';
 import 'package:rdna_delivery/src/core/widgets/app_toast.dart';
 import 'package:rdna_delivery/src/core/widgets/widgets.dart';
+import 'package:rdna_delivery/src/features/notifications/presentation/providers/notification_provider.dart';
 import 'package:rdna_delivery/src/features/order-list/presentation/providers/delivery_orders_provider.dart';
 
 class ReportOrderPage extends StatefulWidget {
@@ -80,6 +81,9 @@ class _ReportOrderPageState extends State<ReportOrderPage> {
                               await Provider.of<DeliveryOrdersProvider>(context,
                                       listen: false)
                                   .listAllDeliveryOrders();
+                              await Provider.of<NotificationProvider>(context,
+                                      listen: false)
+                                  .reset();
                               GetIt.instance<AppRouter>().pushAll(
                                 [
                                   const Dashboard(
