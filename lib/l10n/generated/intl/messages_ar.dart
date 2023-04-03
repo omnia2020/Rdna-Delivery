@@ -97,6 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("لم يتم العثور علي اشعارات"),
         "noThereIsAnIssueWithOrder":
             MessageLookupByLibrary.simpleMessage("لا، توجد مشكلة في الطلب"),
+        "nonActive": MessageLookupByLibrary.simpleMessage("غير نشط"),
         "note": MessageLookupByLibrary.simpleMessage("ملاحظة"),
         "notifications": MessageLookupByLibrary.simpleMessage("الاشعارات"),
         "orderDetails": MessageLookupByLibrary.simpleMessage("تفاصيل الطلب"),
@@ -177,6 +178,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "yourPasswordIsRequired":
             MessageLookupByLibrary.simpleMessage("كلمة السر مطلوبة"),
         "yourPhoneIsInvalid":
-            MessageLookupByLibrary.simpleMessage("رقم الموبايل غير صالح")
+            MessageLookupByLibrary.simpleMessage("رقم الموبايل غير صالح"),
+        "yourStatus": MessageLookupByLibrary.simpleMessage("حالتك")
       };
 }

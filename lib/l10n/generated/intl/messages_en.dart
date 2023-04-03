@@ -94,6 +94,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("No Notifications found"),
         "noThereIsAnIssueWithOrder": MessageLookupByLibrary.simpleMessage(
             "No, There Is An Issue With Order"),
+        "nonActive": MessageLookupByLibrary.simpleMessage("Non-Active"),
         "note": MessageLookupByLibrary.simpleMessage("Note"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orderDetails": MessageLookupByLibrary.simpleMessage("Order Details"),
@@ -173,6 +174,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "yourPasswordIsRequired":
             MessageLookupByLibrary.simpleMessage("Your password is required"),
         "yourPhoneIsInvalid": MessageLookupByLibrary.simpleMessage(
-            "Your mobile number is invalid")
+            "Your mobile number is invalid"),
+        "yourStatus": MessageLookupByLibrary.simpleMessage("Your Status")
       };
 }

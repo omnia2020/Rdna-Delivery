@@ -135,6 +135,10 @@
 
     "received":"تم استلامه",
 
-    "noNotificationFound":"لم يتم العثور علي اشعارات"
+    "noNotificationFound":"لم يتم العثور علي اشعارات",
+
+    "nonActive":"غير نشط",
+
+    "yourStatus":"حالتك"
 
 }

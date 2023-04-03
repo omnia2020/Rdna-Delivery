@@ -133,7 +133,11 @@
 
     "received":"Received",
 
-    "noNotificationFound":"No Notifications found"
+    "noNotificationFound":"No Notifications found",
+
+    "nonActive":"Non-Active",
+
+    "yourStatus":"Your Status"
 
 
 

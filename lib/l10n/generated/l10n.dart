@@ -1069,6 +1069,26 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Non-Active`
+  String get nonActive {
+    return Intl.message(
+      'Non-Active',
+      name: 'nonActive',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your Status`
+  String get yourStatus {
+    return Intl.message(
+      'Your Status',
+      name: 'yourStatus',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

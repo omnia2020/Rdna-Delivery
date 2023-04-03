@@ -87,4 +87,8 @@ class AppColors {
   static const Color brownColor = Color(0xffF8C99D);
   static const Color lightBlack = Color(0xff425063);
   static const Color lightBlack3030 = Color(0xff303030);
+
+  static const Color greyBorder = Color(0xffE1E1E1);
+  static const Color activeColor = Color(0xff03BF2F);
+  static const Color nonActiveColor = Color(0xff6E6E6E);
 }

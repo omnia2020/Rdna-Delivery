@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:rdna_delivery/l10n/l10n.dart';
-import 'package:rdna_delivery/src/core/constants/app_constants.dart';
-import 'package:rdna_delivery/src/core/helpers/session_manager.dart';
 import 'package:rdna_delivery/src/core/themes/themes.dart';
 import 'package:rdna_delivery/src/core/widgets/widgets.dart';
 import 'package:rdna_delivery/src/features/authentication/providers/auth_provider.dart';
@@ -18,22 +16,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String activeStatus = '';
-  Color? statusColor;
-  Color? borderColor;
   init() async {
-    activeStatus = await sessionManager.getActiveStatus();
-    if (activeStatus == AppConstants.userStatus[0].status!.toLowerCase()) {
-      setState(() {
-        statusColor = AppColors.positiveGreenColor;
-        borderColor = AppColors.borderActiveColor;
-      });
-    } else {
-      setState(() {
-        borderColor = AppColors.borderInvisibleColor;
-        statusColor = AppColors.invisibleColor;
-      });
-    }
     await Provider.of<NotificationProvider>(context, listen: false)
         .listAllNotifications();
   }
@@ -41,7 +24,6 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     init();
-    setState(() {});
     super.initState();
   }
 
@@ -71,16 +53,13 @@ class _HomePageState extends State<HomePage> {
                         l10n.welcomeToDeliveryApp,
                         style: AppStyles.darkGrey16pxRegular,
                       ),
-                      18.verticalSpace,
-                      StatusContainer(
-                        userStatus: activeStatus,
-                        borderColor: borderColor,
-                        statusColor: statusColor,
-                        onTap: () {
-                          init();
-                          setState(() {});
-                        },
+                      24.verticalSpace,
+                      Text(
+                        l10n.yourStatus,
+                        style: AppStyles.title14Regular,
                       ),
+                      8.verticalSpace,
+                      const UserToggleStatus(),
                       24.verticalSpace,
                       // Text(l10n.overview),
                       // 8.verticalSpace,
