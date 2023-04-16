@@ -3,8 +3,10 @@ import 'package:rdna_delivery/src/features/home/models/models.dart';
 
 class AppConstants {
   const AppConstants._();
-  static const String apiBaseUrl =
-      'https://rdna-backend.theplanet.tech/api/v1/team';
+  // static const String apiBaseUrl =
+  //     'https://rdna-backend.theplanet.tech/api/v1/team';
+  static const String apiBaseUrl = 'https://backend.rdnastore.com/api/v1/team';
+
   static const String sessionToken = 'session-token';
   static const String accessToken = 'access-token';
   static const String refreshToken = 'refresh-token';

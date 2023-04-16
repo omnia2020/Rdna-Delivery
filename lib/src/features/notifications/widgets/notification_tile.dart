@@ -54,7 +54,7 @@ class NotificationTile extends StatelessWidget {
                 ),
                 8.verticalSpace,
                 SizedBox(
-                  //   width: MediaQuery.of(context).size.width * 0.63,
+                  width: MediaQuery.of(context).size.width * 0.50,
                   child: Text(
                     notificationData?.description ?? '',
                     style: AppStyles.title14Regular,
