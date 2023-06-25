@@ -99,10 +99,14 @@ class _NotificationsPageState extends State<NotificationsPage> {
                     ),
                   );
                 } else {
-                  return Center(
-                    child: Text(
-                      l10n.noNotificationFound,
-                      style: AppStyles.redNote14pxBold,
+                  return Padding(
+                    padding: EdgeInsets.symmetric(
+                        vertical: MediaQuery.of(context).size.height / 2),
+                    child: Container(
+                      child: Text(
+                        l10n.noNotificationFound,
+                        style: AppStyles.redNote14pxBold,
+                      ),
                     ),
                   );
                 }

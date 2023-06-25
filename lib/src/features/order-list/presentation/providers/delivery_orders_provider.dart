@@ -31,7 +31,7 @@ class DeliveryOrdersProvider extends ChangeNotifier {
       _showLoading = true;
       _deliveryOrdersModel = await DeliveryOrdersApi().listAllDeliveryOrders(1);
       notifyListeners();
-      _ordersData?.addAll(_deliveryOrdersModel!.data!.ordersData!);
+      _ordersData?.addAll(_deliveryOrdersModel?.data?.ordersData ?? []);
       _showLoading = false;
       notifyListeners();
     } catch (e) {
@@ -50,7 +50,7 @@ class DeliveryOrdersProvider extends ChangeNotifier {
           _deliveryOrdersModel =
               await DeliveryOrdersApi().listAllDeliveryOrders(currentPage);
           notifyListeners();
-          _ordersData?.addAll(_deliveryOrdersModel!.data!.ordersData!);
+          _ordersData?.addAll(_deliveryOrdersModel?.data?.ordersData ?? []);
           loadMore = true;
           notifyListeners();
         } else {

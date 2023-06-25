@@ -43,75 +43,89 @@ class _OrderListPageState extends State<OrderListPage> {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     loadMoreOrders();
-    return ScaffoldWrapper(
-      body: RefreshIndicator(
-        onRefresh: () async {
-          await Provider.of<DeliveryOrdersProvider>(context, listen: false)
-              .reset();
-          setState(() {});
-        },
-        child: Consumer<DeliveryOrdersProvider>(
+    return RefreshIndicator(
+      onRefresh: () async {
+        await Provider.of<DeliveryOrdersProvider>(context, listen: false)
+            .reset();
+        setState(() {});
+      },
+      child: ScaffoldWrapper(
+        body: Consumer<DeliveryOrdersProvider>(
           builder: (_, state, __) {
             if (state.showLoading) {
               return const Center(
                 child: LoadingProgrss(),
               );
             } else {
-              if (state.ordersData!.isNotEmpty) {
-                return SafeArea(
-                  child: SingleChildScrollView(
-                    physics: const AlwaysScrollableScrollPhysics(),
-                    controller: scrollController,
-                    child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 16.w),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          30.verticalSpace,
-                          // CustomSearchBar(hint: l10n.searchByOrderNo, onSearch: () {}),
-                          // 24.verticalSpace,
-                          Text(l10n.currentOrders,
-                              style: AppStyles.title14Regular),
-                          16.verticalSpace,
-                          ListView.builder(
-                            physics: const NeverScrollableScrollPhysics(),
-                            shrinkWrap: true,
-                            itemCount: state.ordersData?.length,
-                            itemBuilder: (context, index) {
-                              final order = state.ordersData?[index];
-                              return Padding(
-                                padding: EdgeInsets.only(bottom: 16.h),
-                                child: SlideWidget(
-                                  enabled: order?.pickedByDeliveryAt == null
-                                      ? true
-                                      : false,
-                                  onSlide: (context) async {
-                                    await state.acceptOrder(orderID: order!.id);
-                                    if (state.acceptOrderModel != null) {
-                                      AppToast.successToast(
-                                          l10n.thankUForReceivingOrder);
-                                    }
-                                  },
-                                  child: OrderCard(
-                                    orderData: order,
-                                  ),
-                                ),
-                              );
-                            },
+              //if (state.ordersData!.isNotEmpty) {
+              return SafeArea(
+                child: SingleChildScrollView(
+                  physics: const AlwaysScrollableScrollPhysics(),
+                  controller: scrollController,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16.w),
+                    child: state.ordersData!.isNotEmpty
+                        ? Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              30.verticalSpace,
+                              // CustomSearchBar(hint: l10n.searchByOrderNo, onSearch: () {}),
+                              // 24.verticalSpace,
+                              Text(l10n.currentOrders,
+                                  style: AppStyles.title14Regular),
+                              16.verticalSpace,
+                              ListView.builder(
+                                physics: const NeverScrollableScrollPhysics(),
+                                shrinkWrap: true,
+                                itemCount: state.ordersData?.length,
+                                itemBuilder: (context, index) {
+                                  final order = state.ordersData?[index];
+                                  return Padding(
+                                    padding: EdgeInsets.only(bottom: 16.h),
+                                    child: SlideWidget(
+                                      enabled: order?.pickedByDeliveryAt == null
+                                          ? true
+                                          : false,
+                                      onSlide: (context) async {
+                                        await state.acceptOrder(
+                                            orderID: order!.id);
+                                        if (state.acceptOrderModel != null) {
+                                          AppToast.successToast(
+                                              l10n.thankUForReceivingOrder);
+                                        }
+                                      },
+                                      child: OrderCard(
+                                        orderData: order,
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ],
+                          )
+                        : Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical:
+                                    MediaQuery.of(context).size.height / 2),
+                            child: Container(
+                              alignment: Alignment.center,
+                              child: Text(
+                                l10n.noDataFound,
+                                style: AppStyles.redNote14pxBold,
+                              ),
+                            ),
                           ),
-                        ],
-                      ),
-                    ),
                   ),
-                );
-              } else {
-                return Center(
-                  child: Text(
-                    l10n.noDataFound,
-                    style: AppStyles.redNote14pxBold,
-                  ),
-                );
-              }
+                ),
+              );
+              // } else {
+              //   return Center(
+              //     child: Text(
+              //       l10n.noDataFound,
+              //       style: AppStyles.redNote14pxBold,
+              //     ),
+              //   );
+              // }
             }
           },
         ),

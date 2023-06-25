@@ -20,7 +20,7 @@ class NotificationProvider extends ChangeNotifier {
     _notificationData = [];
     try {
       _loading = true;
-      notifyListeners();
+      //notifyListeners();
       _notificationModel =
           await NotificationApi().listAllNotifications(page: 1);
       _loading = false;

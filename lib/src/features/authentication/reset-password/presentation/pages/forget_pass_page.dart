@@ -47,9 +47,9 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   60.verticalSpace,
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
+                    children: [
                       BackWidget(),
                       // SwitchLangCard(),
                     ],
