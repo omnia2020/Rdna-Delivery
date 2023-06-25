@@ -59,5 +59,7 @@
 	<string>My description about why I need this capability</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>My description about why I need this capability</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
