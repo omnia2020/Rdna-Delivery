@@ -87,9 +87,12 @@ class OrderCard extends StatelessWidget {
                               size: 16.w,
                             ),
                             6.horizontalSpace,
-                            Text(
-                              '${orderData?.deliveryToAddress ?? ''}',
-                              style: AppStyles.black14Regular,
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width * 0.40,
+                              child: Text(
+                                '${orderData?.deliveryToAddress ?? ''}',
+                                style: AppStyles.black14Regular,
+                              ),
                             ),
                           ],
                         ),

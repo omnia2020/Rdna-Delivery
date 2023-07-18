@@ -137,9 +137,12 @@
 
     "nonActive":"Non-Active",
 
-    "yourStatus":"Your Status"
+    "yourStatus":"Your Status",
 
+    "at":"At",
+    "home":"Home",
+    "floor":"Floor",
+    "flat":"Flat",
+    "notes":"Notes"
 
-
-    
 }

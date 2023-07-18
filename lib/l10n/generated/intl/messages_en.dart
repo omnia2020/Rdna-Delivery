@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Account Settings"),
         "active": MessageLookupByLibrary.simpleMessage("Active"),
         "alert": MessageLookupByLibrary.simpleMessage("Alert"),
+        "at": MessageLookupByLibrary.simpleMessage("At"),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
         "cardOnDelivery":
             MessageLookupByLibrary.simpleMessage("Card On Delivery"),
@@ -63,6 +64,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fastCall": MessageLookupByLibrary.simpleMessage("Fast Call"),
         "fieldIsRequired":
             MessageLookupByLibrary.simpleMessage("This field is required"),
+        "flat": MessageLookupByLibrary.simpleMessage("Flat"),
+        "floor": MessageLookupByLibrary.simpleMessage("Floor"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("Forget Password?"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
@@ -71,6 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "haveUDeliveredTheOrder": MessageLookupByLibrary.simpleMessage(
             "Have you delivered the order?"),
         "hello": MessageLookupByLibrary.simpleMessage("Hello"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "idle": MessageLookupByLibrary.simpleMessage("Idle"),
         "invisible": MessageLookupByLibrary.simpleMessage("Invisible"),
         "issueWithTheOrder":
@@ -96,6 +100,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "No, There Is An Issue With Order"),
         "nonActive": MessageLookupByLibrary.simpleMessage("Non-Active"),
         "note": MessageLookupByLibrary.simpleMessage("Note"),
+        "notes": MessageLookupByLibrary.simpleMessage("Notes"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orderDetails": MessageLookupByLibrary.simpleMessage("Order Details"),
         "orderItems": MessageLookupByLibrary.simpleMessage("Order Items"),

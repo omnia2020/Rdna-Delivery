@@ -65,9 +65,12 @@ class _OrderStatusSheetState extends State<OrderStatusSheet> {
                           if (state.completeOrder != null) {
                             AppToast.successToast(
                                 l10n.thankUForDeliveringOrder);
+                            // await Provider.of<DeliveryOrdersProvider>(context,
+                            //         listen: false)
+                            //     .listAllDeliveryOrders();
                             await Provider.of<DeliveryOrdersProvider>(context,
                                     listen: false)
-                                .listAllDeliveryOrders();
+                                .reset();
                             await Provider.of<NotificationProvider>(context,
                                     listen: false)
                                 .reset();

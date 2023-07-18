@@ -20,6 +20,7 @@ class _OrderListPageState extends State<OrderListPage> {
 
   @override
   void initState() {
+    scrollController = ScrollController();
     listOrders();
     super.initState();
   }

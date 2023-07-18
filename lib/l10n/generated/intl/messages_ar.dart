@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("إعدادات الحساب"),
         "active": MessageLookupByLibrary.simpleMessage("نشط"),
         "alert": MessageLookupByLibrary.simpleMessage("تنبيه"),
+        "at": MessageLookupByLibrary.simpleMessage("عند"),
         "back": MessageLookupByLibrary.simpleMessage("رجوع"),
         "cardOnDelivery":
             MessageLookupByLibrary.simpleMessage("الدفع بالبطاقة عند الاستلام"),
@@ -65,6 +66,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fastCall": MessageLookupByLibrary.simpleMessage("اتصال سريع"),
         "fieldIsRequired":
             MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
+        "flat": MessageLookupByLibrary.simpleMessage("الشقة"),
+        "floor": MessageLookupByLibrary.simpleMessage("الطابق"),
         "forgetPass": MessageLookupByLibrary.simpleMessage("نسيت كلمة السر؟"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر"),
@@ -73,6 +76,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "haveUDeliveredTheOrder":
             MessageLookupByLibrary.simpleMessage("هل قمت بتسليم الطلب؟"),
         "hello": MessageLookupByLibrary.simpleMessage("مرحبا"),
+        "home": MessageLookupByLibrary.simpleMessage("المنزل"),
         "idle": MessageLookupByLibrary.simpleMessage("غير نشط"),
         "invisible": MessageLookupByLibrary.simpleMessage("غير مرئى"),
         "issueWithTheOrder":
@@ -99,6 +103,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("لا، توجد مشكلة في الطلب"),
         "nonActive": MessageLookupByLibrary.simpleMessage("غير نشط"),
         "note": MessageLookupByLibrary.simpleMessage("ملاحظة"),
+        "notes": MessageLookupByLibrary.simpleMessage("ملاحظات"),
         "notifications": MessageLookupByLibrary.simpleMessage("الاشعارات"),
         "orderDetails": MessageLookupByLibrary.simpleMessage("تفاصيل الطلب"),
         "orderItems": MessageLookupByLibrary.simpleMessage("عناصر الطلب"),

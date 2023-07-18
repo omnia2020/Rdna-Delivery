@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:rdna_delivery/src/core/widgets/app_toast.dart';
 import 'package:rdna_delivery/src/features/order-list/data/delivery_orders_api.dart';
@@ -31,6 +33,7 @@ class DeliveryOrdersProvider extends ChangeNotifier {
       _showLoading = true;
       _deliveryOrdersModel = await DeliveryOrdersApi().listAllDeliveryOrders(1);
       notifyListeners();
+      log('last page is' + _deliveryOrdersModel!.data!.lastPage.toString());
       _ordersData?.addAll(_deliveryOrdersModel?.data?.ordersData ?? []);
       _showLoading = false;
       notifyListeners();
@@ -45,6 +48,7 @@ class DeliveryOrdersProvider extends ChangeNotifier {
     try {
       if (loadMore) {
         lastPage = deliveryOrdersModel?.data?.lastPage ?? 1;
+        log(lastPage.toString());
         currentPage += 1;
         if (currentPage <= lastPage) {
           _deliveryOrdersModel =

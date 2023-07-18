@@ -1089,6 +1089,56 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `At`
+  String get at {
+    return Intl.message(
+      'At',
+      name: 'at',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Floor`
+  String get floor {
+    return Intl.message(
+      'Floor',
+      name: 'floor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Flat`
+  String get flat {
+    return Intl.message(
+      'Flat',
+      name: 'flat',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notes`
+  String get notes {
+    return Intl.message(
+      'Notes',
+      name: 'notes',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -55,6 +55,7 @@ class AuthProvider extends ChangeNotifier {
           status: _appUser?.userInfo?.status ?? 'inactive');
     } catch (e) {
       await resetUserSession();
+      notifyListeners();
       log(e.toString());
     }
   }

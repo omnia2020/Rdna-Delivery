@@ -71,9 +71,13 @@ class _OrderDetailsPageState extends State<OrderDetailsPage> {
                         children: [
                           25.verticalSpace,
                           ShippingAddressWidget(
-                              address:
-                                  state.singleOrderDetails?.data?.address ??
-                                      ''),
+                            address:
+                                state.singleOrderDetails?.data?.address ?? '',
+                            flat: state.singleOrderDetails?.data?.flat,
+                            floor: state.singleOrderDetails?.data?.floor,
+                            locationHome: state.singleOrderDetails?.data?.home,
+                            notes: state.singleOrderDetails?.data?.addressNotes,
+                          ),
                           16.verticalSpace,
                           const Divider(
                             color: AppColors.greyColorE5,
